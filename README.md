@@ -2,17 +2,23 @@
 
 基于 LiOS / π₀.₅ 的三相机双臂 SO101 训练与真机推理项目。这个发布包只提供 **冻结 PaliGemma 主干、训练动作专家及相关投影层的本地 step100000 模型**，不包含云端全参数模型。
 
-![双臂工作区](media/images/robot_workspace.jpg)
+![双臂工作区](https://cdn.jsdelivr.net/gh/Morantkk/SO101-PI05@main/media/images/robot_workspace.jpg)
 
 > 图片来自实际工作区/相机历史记录，不代表本模型的独立成功率评测。叠裤子演示见下方；演示视频不代表独立成功率评测。
 
 ## 成功演示视频
 
-[![叠裤子演示](media/images/success_demo_poster.jpg)](https://github.com/Morantkk/SO101-PI05/raw/refs/heads/main/media/videos/success_demo_h264.mp4)
+[![叠裤子演示](https://cdn.jsdelivr.net/gh/Morantkk/SO101-PI05@main/media/images/success_demo_preview.gif)](https://cdn.jsdelivr.net/gh/Morantkk/SO101-PI05@main/media/videos/success_demo_h264.mp4)
 
-[观看 / 下载叠裤子演示视频](https://github.com/Morantkk/SO101-PI05/raw/refs/heads/main/media/videos/success_demo_h264.mp4) · [视频说明](media/videos/README.md)
+[完整演示视频（约 44 秒，MP4）](https://cdn.jsdelivr.net/gh/Morantkk/SO101-PI05@main/media/videos/success_demo_h264.mp4) · [视频说明](media/videos/README.md)
 
-录制时的检查点、RTC 模式、播放速度和人工介入情况未记录；未提供成功率统计。
+- [直接查看演示动图](https://cdn.jsdelivr.net/gh/Morantkk/SO101-PI05@main/media/images/success_demo_preview.gif)
+- [直接查看工作区照片](https://cdn.jsdelivr.net/gh/Morantkk/SO101-PI05@main/media/images/robot_workspace.jpg)
+- [直接查看训练三视角图片](https://cdn.jsdelivr.net/gh/Morantkk/SO101-PI05@main/media/images/training_views.jpg)
+
+图片和视频原文件保存在本 GitHub 仓库中，访问方式与 [SO101-GR00T](https://github.com/Morantkk/SO101-GR00T) 一致，使用 jsDelivr 提供资源链接。若首页图片未显示，可点击上面的直达链接。
+
+动图预览降低了分辨率和帧率，完整视频保留原文件。录制时的检查点、RTC 模式、播放速度和人工介入情况未记录；未提供成功率统计。
 
 ## 已完成的工作
 
@@ -64,9 +70,9 @@ RTC 不修改权重。执行保留标定范围、速度、跟踪误差、夹爪�
 
 ## 图片与记录
 
-![训练三视角样例](media/images/training_views.jpg)
+![训练三视角样例](https://cdn.jsdelivr.net/gh/Morantkk/SO101-PI05@main/media/images/training_views.jpg)
 
-[相机映射对照](media/images/camera_views.jpg) · [训练损失曲线](media/images/training_loss.png) · [历史面板](media/images/panel_historical.png)
+[相机映射对照](https://cdn.jsdelivr.net/gh/Morantkk/SO101-PI05@main/media/images/camera_views.jpg) · [训练损失曲线](https://cdn.jsdelivr.net/gh/Morantkk/SO101-PI05@main/media/images/training_loss.png) · [历史面板](https://cdn.jsdelivr.net/gh/Morantkk/SO101-PI05@main/media/images/panel_historical.png)
 
 历史面板里是早期 step68660，仅作 UI 示例，不作为本次 step100000 的指标。详见 [素材来源](media/README.md)。
 
