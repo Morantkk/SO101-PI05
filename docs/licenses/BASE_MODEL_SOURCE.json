@@ -1,0 +1,100 @@
+{
+  "_id": "68c03fe5abde8f659687b5e8",
+  "id": "lerobot/pi05_base",
+  "private": false,
+  "pipeline_tag": "robotics",
+  "library_name": "lerobot",
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "vision-language-action",
+    "imitation-learning",
+    "robotics",
+    "en",
+    "arxiv:2504.16054",
+    "base_model:google/paligemma-3b-pt-224",
+    "base_model:finetune:google/paligemma-3b-pt-224",
+    "license:gemma",
+    "eval-results",
+    "region:us"
+  ],
+  "downloads": 21892,
+  "likes": 115,
+  "modelId": "lerobot/pi05_base",
+  "author": "lerobot",
+  "sha": "22c30e5b34f9e7ab738b1b34fc2fc5ecfe2d28f0",
+  "lastModified": "2026-10-06T14:11:08.000Z",
+  "gated": false,
+  "disabled": false,
+  "model-index": null,
+  "config": {},
+  "cardData": {
+    "language": [
+      "en"
+    ],
+    "library_name": "lerobot",
+    "pipeline_tag": "robotics",
+    "tags": [
+      "vision-language-action",
+      "imitation-learning",
+      "lerobot"
+    ],
+    "inference": false,
+    "license": "gemma",
+    "base_model": "google/paligemma-3b-pt-224"
+  },
+  "siblings": [
+    {
+      "rfilename": ".eval_results/vlabench.yaml",
+      "blobId": "5485388efeac454509a97d2bb6afc4a6eb232b82",
+      "size": 251
+    },
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+      "size": 1519
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "819a1034c09317596b32a231d46110987f2ffb48",
+      "size": 5139
+    },
+    {
+      "rfilename": "config.json",
+      "blobId": "427ddad026d32374cfc84b812e00b5d19cd1abc6",
+      "size": 1896
+    },
+    {
+      "rfilename": "model.safetensors",
+      "blobId": "822bdb619cecbe41045c54788df264e57ec03572",
+      "size": 14467165872,
+      "lfs": {
+        "sha256": "0eb11ca9587678c1d2ef8cf32807c29f8ce53a2bfdfc1aa4a4c96f16fca59b0f",
+        "size": 14467165872,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "policy_postprocessor.json",
+      "blobId": "4fffbccee7c63732d79643d71fe17ea7a55ca528",
+      "size": 567
+    },
+    {
+      "rfilename": "policy_preprocessor.json",
+      "blobId": "32760dcc78bee681b0ea4de2c70bb9c8a440f505",
+      "size": 1241
+    }
+  ],
+  "spaces": [
+    "NoriRobotics/pi05-serve",
+    "NoriRobotics/groot-serve"
+  ],
+  "createdAt": "2025-09-09T14:55:33.000Z",
+  "safetensors": {
+    "parameters": {
+      "F32": 3616757520
+    },
+    "total": 3616757520
+  },
+  "usedStorage": 14467165872
+}

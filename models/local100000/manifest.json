@@ -1,0 +1,69 @@
+{
+  "model": "local100000",
+  "checkpoint_step": 100000,
+  "frozen_backbone": true,
+  "weights_variant": "raw",
+  "format": "original DCP in lossless zstd-compressed tar, split at 1000 MiB",
+  "restore_path": "checkpoints/pi05_so101_fold_81plus/fold81_197_b8_e10_20261108/step100000",
+  "parts": [
+    {
+      "name": "local100000.tar.zst.part-000",
+      "bytes": 1048576000,
+      "sha256": "6cb8df78cfbe99790b28287c1cad9ec281bf710ef5840503c9ba856083658121"
+    },
+    {
+      "name": "local100000.tar.zst.part-001",
+      "bytes": 1048576000,
+      "sha256": "2b4b11391a72f0694826ddb649bd40f38b057d380982d44cffa80f069eaed047"
+    },
+    {
+      "name": "local100000.tar.zst.part-002",
+      "bytes": 1048576000,
+      "sha256": "dd180d276f461f0832192e2456a0b379d898f69466f0f70be8fcb47e23cfeebf"
+    },
+    {
+      "name": "local100000.tar.zst.part-003",
+      "bytes": 1048576000,
+      "sha256": "1f831438a952be5ae4c847fa4fda01eaca2e718761f34b7bfb57b1c689da3602"
+    },
+    {
+      "name": "local100000.tar.zst.part-004",
+      "bytes": 1048576000,
+      "sha256": "19b51d3a8074551940a8761f4c8d1f22f7bd194108af1be59ac159e23c00b353"
+    },
+    {
+      "name": "local100000.tar.zst.part-005",
+      "bytes": 1048576000,
+      "sha256": "ba48b1b7f9a7603398e0927c4cc2924bf82f10e2d0fd99cbedcf5be684435421"
+    },
+    {
+      "name": "local100000.tar.zst.part-006",
+      "bytes": 1048576000,
+      "sha256": "164b1275c52a08e27fad38a56a97bdff53b1daa0dbe5c5e499571255784e5ed0"
+    },
+    {
+      "name": "local100000.tar.zst.part-007",
+      "bytes": 1048576000,
+      "sha256": "5822be4154d3cde3005aa799ffabf0a67e6a26bcd9f950a9f58c5ca773f97fbe"
+    },
+    {
+      "name": "local100000.tar.zst.part-008",
+      "bytes": 39140253,
+      "sha256": "adc04fb0c6b5182284829f5c9c5ca513892c858fc756e6c24d66623b3e3e586b"
+    }
+  ],
+  "files": [
+    {
+      "archive_path": "step100000/.metadata",
+      "bytes": 316367,
+      "sha256": "cf129832922185b1a1489dc21c1d71a3889c398b4379227f9ff633b7378dc1ce"
+    },
+    {
+      "archive_path": "step100000/__0_0.distcp",
+      "bytes": 16574901365,
+      "sha256": "042e6ea3ddbcad174dcacdab4fef2c1d6b848e72fb3cf2cc5ddfdb4fcbd2c454"
+    }
+  ],
+  "compressed_bytes": 8427748253,
+  "source_bytes": 16575217732
+}

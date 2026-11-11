@@ -1,0 +1,48 @@
+{
+  "robot_id": "YOUR_ROBOT_CALIBRATION_ID",
+  "left_port": "/dev/serial/by-id/YOUR_LEFT_ARM",
+  "right_port": "/dev/serial/by-id/YOUR_RIGHT_ARM",
+  "cameras": {
+    "mid": "/dev/v4l/by-id/YOUR_MID_CAMERA",
+    "left": "/dev/v4l/by-id/YOUR_LEFT_CAMERA",
+    "right": "/dev/v4l/by-id/YOUR_RIGHT_CAMERA"
+  },
+  "state_url": "ws://127.0.0.1:18081/ws/from-client",
+  "action_url": "ws://127.0.0.1:18081/ws/to-client",
+  "state_hz": 50,
+  "checkpoint": "checkpoints/pi05_so101_fold_81plus/fold81_197_b8_e10_20261108/step100000",
+  "checkpoint_step": 100000,
+  "policy": "pi05_so101_fold_81plus",
+  "prompt": "Fold the clothing neatly using both arms",
+  "horizon": 30,
+  "fps": 30,
+  "num_steps": 40,
+  "compile_model": true,
+  "execution_enabled": false,
+  "model_sha256": "042e6ea3ddbcad174dcacdab4fef2c1d6b848e72fb3cf2cc5ddfdb4fcbd2c454",
+  "metadata_sha256": "cf129832922185b1a1489dc21c1d71a3889c398b4379227f9ff633b7378dc1ce",
+  "norm_stats_sha256": "02bcec98c2125383b9b2fd266b00384f4c5137768d8682b38eecd1dc6389cce0",
+  "state_names": [
+    "left_shoulder_pan.pos",
+    "left_shoulder_lift.pos",
+    "left_elbow_flex.pos",
+    "left_wrist_flex.pos",
+    "left_wrist_roll.pos",
+    "left_gripper.pos",
+    "right_shoulder_pan.pos",
+    "right_shoulder_lift.pos",
+    "right_elbow_flex.pos",
+    "right_wrist_flex.pos",
+    "right_wrist_roll.pos",
+    "right_gripper.pos"
+  ],
+  "backend": "lios",
+  "report_dir": "local_step100000",
+  "weights_variant": "raw",
+  "compile_mode": "default",
+  "rtc": {
+    "enabled": false
+  },
+  "inference_backend": "ordinary",
+  "execution_duration_s": 0
+}

@@ -1,0 +1,1410 @@
+{
+  "scope": "source bundle before author adds demo video",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 1027,
+      "sha256": "9d63a80cb56664e955279417242ddeb0b36fef73402cc48355c7021d6a284cb0"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11342,
+      "sha256": "0157445be366f0563b90c91c38e37d6372101d0d0ca59cffc113a8ee2a35ca71"
+    },
+    {
+      "path": "MODEL_CARD.md",
+      "bytes": 2367,
+      "sha256": "14f3ed8e9dfaf0ffbcd9de794c12c818f0662da82ae5b9129c2b095d3067b869"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 1558,
+      "sha256": "69229f5729d4c3a2dfa5aa4039f176f51a7639c1d80c1957f4748e9d61b55ac5"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4810,
+      "sha256": "36bbe29fa158457b54d8949e7c6a8c038cf73c365678f04929d30e517a7455b1"
+    },
+    {
+      "path": "deployment/so101/README.md",
+      "bytes": 367,
+      "sha256": "c4925441668bdebc7b56c83364e093f15c7bfa0aeb799691c2c4a544356ab5c8"
+    },
+    {
+      "path": "deployment/so101/ROBOT_COMMANDS.md",
+      "bytes": 1951,
+      "sha256": "743bd9f16168c7a6e50f932ed0b25f29243cc56ff846ffd4e9af69dbf20a499b"
+    },
+    {
+      "path": "deployment/so101/action_protocol.py",
+      "bytes": 1830,
+      "sha256": "5362d989ea5caaea94f2f21db9928cd081262112ff0f626bae9b6eb4e661d0ed"
+    },
+    {
+      "path": "deployment/so101/config.example.json",
+      "bytes": 1590,
+      "sha256": "d6e97cb5e2589672c7fa16c5132936318ec98bfdf3660ca67381eed402cd688c"
+    },
+    {
+      "path": "deployment/so101/execution_limits.py",
+      "bytes": 1483,
+      "sha256": "1375d586a5ad051e35f78ae6cd6e72676dbd24a3247a373d981fe8b414643312"
+    },
+    {
+      "path": "deployment/so101/execution_options.py",
+      "bytes": 462,
+      "sha256": "664d1a35b679ed7a46d258cf6ca8d2cfaecedd9374e8140168f9d868f99da61e"
+    },
+    {
+      "path": "deployment/so101/home_pose.example.json",
+      "bytes": 137,
+      "sha256": "600aa65cb0c8bd9fdf11fdc5292bf6b5af143f81ba168448a86767f9c7aacb3c"
+    },
+    {
+      "path": "deployment/so101/home_sequence.py",
+      "bytes": 2988,
+      "sha256": "bee52e28932144607ee747e1f5abad04b7819f15e780c5c51b87479aa10a7093"
+    },
+    {
+      "path": "deployment/so101/infer_robot.sh",
+      "bytes": 2209,
+      "sha256": "e45d85d58c172b1ee25aefde3775d5e49c64f58b59826d4310324c7962c61389"
+    },
+    {
+      "path": "deployment/so101/init_inference.py",
+      "bytes": 6186,
+      "sha256": "2b2af383e8464b475852677283e2b361db6733016598e3787bcb0f010ef8f39c"
+    },
+    {
+      "path": "deployment/so101/init_inference.sh",
+      "bytes": 268,
+      "sha256": "6ffca2adc11c37784338e0714e68de3bce9f1247ada0679d210c187671915911"
+    },
+    {
+      "path": "deployment/so101/joint_trial.py",
+      "bytes": 13959,
+      "sha256": "488088d098d699d9693f2341349cdd368cd5ff6b2f36286b669218679010a489"
+    },
+    {
+      "path": "deployment/so101/manual_release.py",
+      "bytes": 2889,
+      "sha256": "8fba1ab03e3aac9c3fcbcda4a06640c6500ca16b437014436321b68f97560105"
+    },
+    {
+      "path": "deployment/so101/model_registry.py",
+      "bytes": 1259,
+      "sha256": "0d6d79f1f675654c38f388c60b7a7441ba642e34134100175fb06619110fdabd"
+    },
+    {
+      "path": "deployment/so101/panel.html",
+      "bytes": 5141,
+      "sha256": "7c49663630a9abe17dae784f6177e882906fcb3ac58ef883dd677aeaea8f3430"
+    },
+    {
+      "path": "deployment/so101/panel.py",
+      "bytes": 4045,
+      "sha256": "5e4eba4776401a06f87b680ec9f6648cf5e33dadbd4d6e4bdc6c7f6451f11901"
+    },
+    {
+      "path": "deployment/so101/position_hold.py",
+      "bytes": 1477,
+      "sha256": "607e0a47b3196425d418f82ed7cd25b34eac2a3c7c65bbe7927e0091d087518b"
+    },
+    {
+      "path": "deployment/so101/reset_robot.sh",
+      "bytes": 2516,
+      "sha256": "76f5a5d0e48e0ddf49b25756faf2c446170341297dafaad2c7b72f998cd455e0"
+    },
+    {
+      "path": "deployment/so101/return_home.py",
+      "bytes": 6832,
+      "sha256": "a473c40595f1667984878bd7baeba36f3b0eec2c18dd8c3492190dee39ed26c2"
+    },
+    {
+      "path": "deployment/so101/return_to_start.py",
+      "bytes": 3588,
+      "sha256": "316335047da4e2e0a9bed8572f737a2da1386ecd7cea9ba4179975824dd2dfd8"
+    },
+    {
+      "path": "deployment/so101/robotctl.py",
+      "bytes": 18378,
+      "sha256": "aad2f5560256fb35ddf1273e25b34b6fcfa0b24377596de891ad6b78474e3ab0"
+    },
+    {
+      "path": "deployment/so101/robotctl.sh",
+      "bytes": 266,
+      "sha256": "5ed19f6b0f1ffddb477cfdc6f65ffec365640932cbacec02808c27a2d36a5527"
+    },
+    {
+      "path": "deployment/so101/rtc_protocol.py",
+      "bytes": 6232,
+      "sha256": "092448be4d8d117ddc59efe7e409aa65a263c3ed89997a253ceadd7bbeff2c95"
+    },
+    {
+      "path": "deployment/so101/run_joint_trial.sh",
+      "bytes": 1165,
+      "sha256": "bdd2f480e142e5b714d9b7543a9ba3671442cde5ed2944f8cd4f3a29cb8df47a"
+    },
+    {
+      "path": "deployment/so101/runtime.env.example",
+      "bytes": 160,
+      "sha256": "2d5cdd777568c8cf4e540ea160b577bbb991ac23dafe093d6b6f2714ba076d85"
+    },
+    {
+      "path": "deployment/so101/runtime_env.sh",
+      "bytes": 294,
+      "sha256": "bd54b50a97d38c8ccdaabe3a6429bf76d70a7061c8ca3f76300215010debdbbc"
+    },
+    {
+      "path": "deployment/so101/start.sh",
+      "bytes": 2749,
+      "sha256": "4313655a403ec9fedab3651e4a3a543052c7d40b57f3f1fa9aa8f0a1fb46e33b"
+    },
+    {
+      "path": "deployment/so101/state_client.py",
+      "bytes": 8559,
+      "sha256": "92665cabf62c75843fc9781beade99294ff0b9c607d3853fc31130f4b420a970"
+    },
+    {
+      "path": "deployment/so101/stop.sh",
+      "bytes": 555,
+      "sha256": "2be388ac8c93bc373c47ddb1273b8eb77d476c313cfdc3fc5e5c937af99232d4"
+    },
+    {
+      "path": "deployment/so101/test_cloud_protocol.py",
+      "bytes": 2441,
+      "sha256": "35821b5859de67f85fb8a55b25ce3100400e05a5de20297755370a14dbca0a2a"
+    },
+    {
+      "path": "deployment/so101/test_joint_trial.py",
+      "bytes": 3693,
+      "sha256": "9aefc842bbc85d6b4c99d393cd2cd6c02eaddb7c187b469fca956f12cb905482"
+    },
+    {
+      "path": "deployment/so101/validate_rtc_observation.py",
+      "bytes": 2461,
+      "sha256": "b44cfd89415162128b8e81e1c91d839f665d07f34c3913bada1f0d335a635477"
+    },
+    {
+      "path": "docs/PROJECT_SUMMARY.md",
+      "bytes": 1820,
+      "sha256": "313d06a8535444934f7fa2a5eec6cceeb93d022c0fbb892922f9eb4b97bfdc5e"
+    },
+    {
+      "path": "docs/PUBLISH.md",
+      "bytes": 2491,
+      "sha256": "c48b5f7a32ccfe9b865d45867b17e92f860ea0961f41063ef3997aa7e5acff71"
+    },
+    {
+      "path": "docs/RTC.md",
+      "bytes": 1178,
+      "sha256": "ae30e82b96ed3bb1c247b4b106e6abb1fa0b62c044523ead4d2802d4390f82da"
+    },
+    {
+      "path": "docs/SETUP.md",
+      "bytes": 4239,
+      "sha256": "245e03b952310efae4bbdad3cd8c0fea5d582bd89c564d6fbff6c20aff5c0e2a"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 1733,
+      "sha256": "1d8c84b48d5504b85e4041651f800a9cc0afb9d38c28e83f32227971c4babc52"
+    },
+    {
+      "path": "docs/evidence/checkpoint_provenance.json",
+      "bytes": 155,
+      "sha256": "258427f5f6cd339371e05287ef7d23d3bf33031b4659c66a6077bf30b5e38cbf"
+    },
+    {
+      "path": "docs/evidence/offline_20261110_173832_08675ef4.json",
+      "bytes": 10766,
+      "sha256": "aac7b288e2d61f1b165ee5d49277d0192853db078f975b6fd2a2a8dbf7dc508c"
+    },
+    {
+      "path": "docs/evidence/offline_20261110_173935_5f063cac.json",
+      "bytes": 11021,
+      "sha256": "59785db3f6a2115704e5b0c4ac82fe4ffb23cb841878c561bd889599d57ecac6"
+    },
+    {
+      "path": "docs/evidence/release_scope.json",
+      "bytes": 555,
+      "sha256": "50ee61648e8c31e754b5c28673cc82bf4d8b3ed1fa81383624013c2a5404af54"
+    },
+    {
+      "path": "docs/evidence/release_validation.json",
+      "bytes": 2114,
+      "sha256": "a20a397a1071b8b3f7314835bb0738c246fb48e66cb7e85b5e3779ba903dae58"
+    },
+    {
+      "path": "docs/evidence/train_metrics.jsonl",
+      "bytes": 2329769,
+      "sha256": "ad3d9b16561ea0a2ee7068b89e1d073cfcf01660c9416b7eb9f009f75d8b089a"
+    },
+    {
+      "path": "docs/evidence/training_run.json",
+      "bytes": 3453,
+      "sha256": "fce8f19c8e79da2cd553b942e8ea477c0efa798972877655c2e1086206f90b9b"
+    },
+    {
+      "path": "docs/licenses/BASE_MODEL_CARD.md",
+      "bytes": 5139,
+      "sha256": "5660a59c4bc742dbab3b0f8a109442436b8378200cdbdf6ed35045efe16cdfdc"
+    },
+    {
+      "path": "docs/licenses/BASE_MODEL_SOURCE.json",
+      "bytes": 2421,
+      "sha256": "4994ef24d8f366eff567d0c96acd3640a702054ca6736adf5d1948548b43e37b"
+    },
+    {
+      "path": "docs/licenses/GEMMA_PROHIBITED_USE.txt",
+      "bytes": 3853,
+      "sha256": "71375e40d1fd4f9221515ba6ca3d6aa141cd8e9af1d0f61baadc883af5a87ebe"
+    },
+    {
+      "path": "docs/licenses/GEMMA_TERMS.txt",
+      "bytes": 9030,
+      "sha256": "34b90ac3f947577112488b8c4cf5ffd6bf3bba2d38b7adb0e18360ac1af5d58b"
+    },
+    {
+      "path": "docs/licenses/WEIGHTS_NOTICE.md",
+      "bytes": 862,
+      "sha256": "2eff8ff0e989e204b93ba0ca18b531924617c10a261a6465956c9e7945be3fbe"
+    },
+    {
+      "path": "lios-pi/.gitignore",
+      "bytes": 436,
+      "sha256": "2c2b7d01487f0a98ed6f53f2afb434afb984b8789521acc2b2d87b38921a74d5"
+    },
+    {
+      "path": "lios-pi/.pre-commit-config.yaml",
+      "bytes": 874,
+      "sha256": "59c9aa1b99fa4e38efbc49376793cca4d2c330029548b7f41b52bf2a26673831"
+    },
+    {
+      "path": "lios-pi/AGENTS.md",
+      "bytes": 3705,
+      "sha256": "c45ef4bf4cf478706870228ca950e5fed71b6b3f9b59bb9a965e900b799f81f2"
+    },
+    {
+      "path": "lios-pi/LICENSE",
+      "bytes": 11342,
+      "sha256": "0157445be366f0563b90c91c38e37d6372101d0d0ca59cffc113a8ee2a35ca71"
+    },
+    {
+      "path": "lios-pi/NOTICE",
+      "bytes": 1558,
+      "sha256": "69229f5729d4c3a2dfa5aa4039f176f51a7639c1d80c1957f4748e9d61b55ac5"
+    },
+    {
+      "path": "lios-pi/README.md",
+      "bytes": 4483,
+      "sha256": "b74d62107ffce4f6565bc0e9fc3f844a11cc7e9b9fce40ed4ae0c9a258480e81"
+    },
+    {
+      "path": "lios-pi/README.zh-CN.md",
+      "bytes": 4576,
+      "sha256": "45b840dcf98ea4308eaceb240678f764a4c9e4296b4432856f0ec685f3906b9e"
+    },
+    {
+      "path": "lios-pi/assets/pi05_airbot/airbot/norm_stats.json",
+      "bytes": 3469,
+      "sha256": "d22ccf6c35e77437e45576f0fd77da8ca9687bf03b17a5c7a7fd20679dbd082d"
+    },
+    {
+      "path": "lios-pi/assets/pi05_so101_fold_81plus/fold81_197_h30_trainonly_wristfixed_20261108/README.zh-CN.md",
+      "bytes": 2072,
+      "sha256": "35c420bdcd7c2d8fe5d2b4fbb4f293933aaeb195eebd2f22b6ec8c92edbfbf50"
+    },
+    {
+      "path": "lios-pi/assets/pi05_so101_fold_81plus/fold81_197_h30_trainonly_wristfixed_20261108/camera_sample_montage.jpg",
+      "bytes": 534913,
+      "sha256": "1ce9d3ffb98b4c1f0fec76d4ca01a2e11f5225cfdbab719cf180b9728561b4db"
+    },
+    {
+      "path": "lios-pi/assets/pi05_so101_fold_81plus/fold81_197_h30_trainonly_wristfixed_20261108/norm_stats.json",
+      "bytes": 2927,
+      "sha256": "02bcec98c2125383b9b2fd266b00384f4c5137768d8682b38eecd1dc6389cce0"
+    },
+    {
+      "path": "lios-pi/assets/pi05_so101_fold_81plus/fold81_197_h30_trainonly_wristfixed_20261108/original_frame_ranges.json",
+      "bytes": 11329,
+      "sha256": "2caefff838e017f904637e3487ee4b6c7761ff987682c9bcf98ed6076119421e"
+    },
+    {
+      "path": "lios-pi/assets/pi05_so101_fold_81plus/fold81_197_h30_trainonly_wristfixed_20261108/provenance.json",
+      "bytes": 2815,
+      "sha256": "1601b7a5f9f3ce39db19f620e07c505281261799852de082be76c323eda3e24d"
+    },
+    {
+      "path": "lios-pi/assets/pi05_so101_fold_81plus/fold81_197_h30_trainonly_wristfixed_20261108/source_snapshot_before.json",
+      "bytes": 11114,
+      "sha256": "2d1d03a4d56421f38ca43c89b7ae3d28869d98ed0c9a22e8f2810c216be6467c"
+    },
+    {
+      "path": "lios-pi/assets/pi05_so101_fold_81plus/fold81_197_h30_trainonly_wristfixed_20261108/split.json",
+      "bytes": 10578,
+      "sha256": "b63a1b2be1a52f891f1013691da5dc0a487f4583903d94930f4fcee2aaabcb2b"
+    },
+    {
+      "path": "lios-pi/assets/pi05_so101_fold_81plus/fold81_197_h30_trainonly_wristfixed_20261108/trim_records.json",
+      "bytes": 34769,
+      "sha256": "231b3e01f58ee9cf074835ed435276c92efbb28675b0cff720bc1871d530b1fd"
+    },
+    {
+      "path": "lios-pi/assets/pi05_so101_fold_81plus/fold81_197_h30_trainonly_wristfixed_20261108/verification.json",
+      "bytes": 220842,
+      "sha256": "8aacaf1c4a4140ada5e659fbafa40ea8b1ad7901d02cafea4973d0c1f5f4f1f0"
+    },
+    {
+      "path": "lios-pi/docs/architecture.md",
+      "bytes": 11854,
+      "sha256": "6fc8eae92c70a0e1162e7bb1c855c3a75a7bee1814e3e5b6cae94b615df4c7ef"
+    },
+    {
+      "path": "lios-pi/docs/architecture.zh-CN.md",
+      "bytes": 11734,
+      "sha256": "1f45e4ed9b8c6b335950e1f956117123d5119afe8d97db72581d2a9ef318f578"
+    },
+    {
+      "path": "lios-pi/docs/datasets.md",
+      "bytes": 8716,
+      "sha256": "09f63f81b36e0da6564cf559e54cd71de30127f5011ec02d4a6bd6a1b62288a5"
+    },
+    {
+      "path": "lios-pi/docs/datasets.zh-CN.md",
+      "bytes": 8531,
+      "sha256": "b3eccac73afb4339c0465a04766856c823593e831ca95dc7753efbf979461187"
+    },
+    {
+      "path": "lios-pi/docs/deployment.md",
+      "bytes": 16671,
+      "sha256": "3a706854362ca482904f5f86b5de369ebbc880ae89a8f215195fd3989ffc264d"
+    },
+    {
+      "path": "lios-pi/docs/deployment.zh-CN.md",
+      "bytes": 15541,
+      "sha256": "1124f420995a573f7c3061f47055414483ba2915b1c10ec8676d7d2a6cf77ded"
+    },
+    {
+      "path": "lios-pi/docs/porting-from-openpi.md",
+      "bytes": 7149,
+      "sha256": "1344756c37bfe9cf37998bf97fed58cdc7e9a041d3a943356ccd5f48883372c4"
+    },
+    {
+      "path": "lios-pi/docs/porting-from-openpi.zh-CN.md",
+      "bytes": 6984,
+      "sha256": "18f91891c284286149c6dd6180cae144ed26090faa5cdf185e7074f9fedef500"
+    },
+    {
+      "path": "lios-pi/docs/rtc_reference/LICENSE",
+      "bytes": 1078,
+      "sha256": "2314c19f6a70f084aaecded7a427b688e6e93b9016f6837f2a9a91a9e17ddf3f"
+    },
+    {
+      "path": "lios-pi/docs/rtc_reference/README.md",
+      "bytes": 10267,
+      "sha256": "43cb6def17ea5c62f7e3bb751f18d6ef6fec2e96c4cb27cfbaf19c5b762a78e7"
+    },
+    {
+      "path": "lios-pi/docs/rtc_reference/author_model.py.txt",
+      "bytes": 12883,
+      "sha256": "f59e9479c4fe4386ca027ba1a5c0b4940552adfae8cdb38d177cefec1427482e"
+    },
+    {
+      "path": "lios-pi/docs/training.md",
+      "bytes": 11733,
+      "sha256": "d03aa05d6bbae4f985de0d9b84618974a45528f4850f0863d3a4d02905f3a1fd"
+    },
+    {
+      "path": "lios-pi/docs/training.zh-CN.md",
+      "bytes": 11606,
+      "sha256": "4582ac9c2eab80386f90850222d0d881da92fcda02396018a5bc90dbcf22bc0b"
+    },
+    {
+      "path": "lios-pi/pixi.lock",
+      "bytes": 436651,
+      "sha256": "3ed23edb91773bc8d2b133594136cf29ec9f13861bb4962969b77d677ff09d76"
+    },
+    {
+      "path": "lios-pi/pixi.toml",
+      "bytes": 3747,
+      "sha256": "02869549456fe81437df7a228e31a15ae4ef52e2c417e6dded7edbbc7d993878"
+    },
+    {
+      "path": "lios-pi/pyproject.toml",
+      "bytes": 1594,
+      "sha256": "32b0145dacc2137440c8c3390dfe5e22b98608d265a99454bd476fb8386920dc"
+    },
+    {
+      "path": "lios-pi/scripts/convert_lerobot_stats.py",
+      "bytes": 2484,
+      "sha256": "0ee5ec8de0ae11edd908b400116d5c203936df6657806a27679c3b04acda7283"
+    },
+    {
+      "path": "lios-pi/scripts/deployment/action_viewer.ju.py",
+      "bytes": 4144,
+      "sha256": "3dc10bff64e646dc93f74e63c7e660b211a6127f207816e7a8effa387a58dd54"
+    },
+    {
+      "path": "lios-pi/scripts/deployment/inference.ipynb",
+      "bytes": 28904,
+      "sha256": "ec2587ac658fcbb4a40e53caec4a6fba563b7f550e76221c4d8ec1e7b83a53f5"
+    },
+    {
+      "path": "lios-pi/scripts/deployment/normalizer.py",
+      "bytes": 2682,
+      "sha256": "a961298df8e173f51749464d308c927103dbac33d62796591c1d40e6bb6a0105"
+    },
+    {
+      "path": "lios-pi/scripts/deployment/register_so101_model.py",
+      "bytes": 5209,
+      "sha256": "a7bbf5fab77197e3f87159756b213c94b8966312ee383b702583f56bebcfbd96"
+    },
+    {
+      "path": "lios-pi/scripts/deployment/serve_so101.py",
+      "bytes": 17577,
+      "sha256": "3d804dc7cabfc74f5c3761f61760808da86febf9280a7cbfe185a13b8855e88c"
+    },
+    {
+      "path": "lios-pi/scripts/inference.py",
+      "bytes": 3104,
+      "sha256": "c17fdb4f8cdd84736b26c4242bd5663e447451818155cfa7b13fee5497b3db96"
+    },
+    {
+      "path": "lios-pi/scripts/train/batch_compute_norm_stats.sh",
+      "bytes": 2851,
+      "sha256": "463476d0d7169485234f64cc2c8cb7cb5e4de190cdc10f9a0b506c1316ce8750"
+    },
+    {
+      "path": "lios-pi/scripts/train/compute_norm_stats.py",
+      "bytes": 11094,
+      "sha256": "1481d8b9d38dd848955417918071c25567a06d4c053a09544d3940a4ce29caa3"
+    },
+    {
+      "path": "lios-pi/scripts/train/data_loader.py",
+      "bytes": 16962,
+      "sha256": "37987439881864606959f3e8ca790deaeaab64bbe135f8182f2b338795443660"
+    },
+    {
+      "path": "lios-pi/scripts/train/local_training_panel.py",
+      "bytes": 11622,
+      "sha256": "733ea1c80e1a7b8a0b12f90d2a1ee5a53612cdf340ec122d2b92e2154b81658c"
+    },
+    {
+      "path": "lios-pi/scripts/train/prepare_so101_81plus.py",
+      "bytes": 24154,
+      "sha256": "38ea102620228ef6db91e7c4df1b5124af29f3f36faa559d5fb31142718b363c"
+    },
+    {
+      "path": "lios-pi/scripts/train/prepare_so101_fold.py",
+      "bytes": 5542,
+      "sha256": "9a171f739d4dcbbb768a9645e5a20504f155b0b355fa45a4236fd556cce04dd8"
+    },
+    {
+      "path": "lios-pi/scripts/train/profiling.py",
+      "bytes": 4623,
+      "sha256": "86e301d3b0910432cb50edc589ffa9e48428c2ad0fcb13d5f80578fb9d95e2c8"
+    },
+    {
+      "path": "lios-pi/scripts/train/relocate_so101_assets.py",
+      "bytes": 3219,
+      "sha256": "af82303c6bb75477ef173190ab449782306fc371fa8583fc189d20e5cfc55065"
+    },
+    {
+      "path": "lios-pi/scripts/train/run_compute_norm_stats.sh",
+      "bytes": 382,
+      "sha256": "f02d992072b7140f2930f2ffdb582e118d7dd9464930fe0b892920fdedfe3db8"
+    },
+    {
+      "path": "lios-pi/scripts/train/start_example.sh",
+      "bytes": 4796,
+      "sha256": "f13cdd96410541f8170f8e9b7cb1504472e83fd2bc84f72a709ac4d4a500fc88"
+    },
+    {
+      "path": "lios-pi/scripts/train/start_so101_h100.sh",
+      "bytes": 3249,
+      "sha256": "df644ffc79e0a28535b24805e00fdf13a40b6a7c4f6508b4baf66ac3947acc75"
+    },
+    {
+      "path": "lios-pi/scripts/train/train_pytorch_fsdp.py",
+      "bytes": 23021,
+      "sha256": "27acd6821927dd6220f9ec2b59d573065a3184c7178b29569fe350e4accb4dee"
+    },
+    {
+      "path": "lios-pi/scripts/train/training_panel.html",
+      "bytes": 6750,
+      "sha256": "d766dd0ae9d8b5d91468e7a4f57c94199c3ce8bb46ca69e21f8f85f5f9ae2125"
+    },
+    {
+      "path": "lios-pi/scripts/train/utils.py",
+      "bytes": 23765,
+      "sha256": "57beeb500023179c16e27e010e27c936779a497d6c251e6d641b5a55e8de102c"
+    },
+    {
+      "path": "lios-pi/scripts/verify_pretrained.py",
+      "bytes": 2801,
+      "sha256": "37139172f9b42aea52c763ffaffb50b2db04747e5cd5815bbf376419ecb96665"
+    },
+    {
+      "path": "lios-pi/scripts/verify_so101_data.py",
+      "bytes": 7479,
+      "sha256": "f7043413f4814f2b8525ce4a388bb79f00b67db7c417755b6118b6f590b4003b"
+    },
+    {
+      "path": "lios-pi/src/pi/__init__.py",
+      "bytes": 50,
+      "sha256": "f3ad14e75793dc1626f352bcbbb74a7798a0166e1d31fcd981e970f75d513ea6"
+    },
+    {
+      "path": "lios-pi/src/pi/data.py",
+      "bytes": 27492,
+      "sha256": "ed701b9e4beea47c34af834168b01c18bfea8b884995d98efb9c54408564bfaa"
+    },
+    {
+      "path": "lios-pi/src/pi/ema_model.py",
+      "bytes": 2542,
+      "sha256": "d923277638878a0777e58b75f6768df439d1d968da193cf949e7c9cd38869985"
+    },
+    {
+      "path": "lios-pi/src/pi/inference_buffer_v2.py",
+      "bytes": 14639,
+      "sha256": "f45c66c3a983c7aa2b6698051a7e2b836c8d7f9b97ffc4a68515ca264c5a68d5"
+    },
+    {
+      "path": "lios-pi/src/pi/lerobot_v3.py",
+      "bytes": 8619,
+      "sha256": "2503a25eecb41cf7b6dc1b81d0eb524a59df30d1fa3251d80843c90b0f86f9ab"
+    },
+    {
+      "path": "lios-pi/src/pi/models/gemma.py",
+      "bytes": 2301,
+      "sha256": "996378199720d60a08514a9ea15c9b35a177a41c773753457e90e46582a12c65"
+    },
+    {
+      "path": "lios-pi/src/pi/models/gemma_/configuration_gemma.py",
+      "bytes": 8192,
+      "sha256": "2dc52c97a5407efdb08476c2a18f31d94b77353d0ab30864adac3a48f125dfde"
+    },
+    {
+      "path": "lios-pi/src/pi/models/gemma_/modeling_gemma.py",
+      "bytes": 36130,
+      "sha256": "cc1d52b245b419ea7c1281584bce6de7bf00ac18f389a9c0328e5b3f9ae8887d"
+    },
+    {
+      "path": "lios-pi/src/pi/models/model.py",
+      "bytes": 3863,
+      "sha256": "f4b542e9986cebb674f254d2b034df74f4affb7d2862d9461fbd5175fbfa6eb7"
+    },
+    {
+      "path": "lios-pi/src/pi/models/paligemma/modeling_paligemma.py",
+      "bytes": 27992,
+      "sha256": "638ee622d4e1958cc70277b590248e5d8fae9e1a6b360ff29832428a3734bb67"
+    },
+    {
+      "path": "lios-pi/src/pi/models/pi_config.py",
+      "bytes": 1900,
+      "sha256": "ffa7082a6d352cbe70176c9f615eece6f00dc2b908d76232b3391f26d370e606"
+    },
+    {
+      "path": "lios-pi/src/pi/models/siglip/modeling_siglip.py",
+      "bytes": 50178,
+      "sha256": "efb4f8ea4d04cbe2b0abd616a05663a6e27c64ff9f8f1c33637febee5660b067"
+    },
+    {
+      "path": "lios-pi/src/pi/models/tokenizer.py",
+      "bytes": 2136,
+      "sha256": "0f1e8046a49b890e432a2e03062c571dfe30dc08e8ecf104c8026dfc5fdb7145"
+    },
+    {
+      "path": "lios-pi/src/pi/models_pytorch/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "lios-pi/src/pi/models_pytorch/attention_pooling.py",
+      "bytes": 6838,
+      "sha256": "f6539d4dfd6d73b38fb96ffa21bd5938ccb9d8467a4ba2677eb6729672c02db3"
+    },
+    {
+      "path": "lios-pi/src/pi/models_pytorch/gemma_pytorch.py",
+      "bytes": 13691,
+      "sha256": "fa06b5c5a1b9a53388989ea2fdbd30602fb3bce0275157a0238a821a491c2c60"
+    },
+    {
+      "path": "lios-pi/src/pi/models_pytorch/pi0_pytorch.py",
+      "bytes": 23841,
+      "sha256": "99e6597466913c72dc13f666e6e3c4f90a598c24ceb58f2f17cd4d96bae9b1ec"
+    },
+    {
+      "path": "lios-pi/src/pi/models_pytorch/preprocessing_pytorch.py",
+      "bytes": 13731,
+      "sha256": "63efd187e8c2198d953297bdabc307e0d6c6826b94da7c9493e6b7234fba16e9"
+    },
+    {
+      "path": "lios-pi/src/pi/models_pytorch/rtc.py",
+      "bytes": 5268,
+      "sha256": "a148118d91496b2356c43919e3d23c8964a67e9a2ebb6ed820ba3ff4bb05b61a"
+    },
+    {
+      "path": "lios-pi/src/pi/services/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "lios-pi/src/pi/services/ws_json_api.py",
+      "bytes": 11347,
+      "sha256": "b84fb0dfec8f61da20b63f54ff855e55aab66d982b343ccc563e68bdf873c024"
+    },
+    {
+      "path": "lios-pi/src/pi/shared/download.py",
+      "bytes": 7966,
+      "sha256": "48e55e01782203f67ddc73463c03367819800784409058f8261d8c661b9b57bf"
+    },
+    {
+      "path": "lios-pi/src/pi/shared/image_tools.py",
+      "bytes": 4986,
+      "sha256": "da3cf0148d8d1a2d94c87633e8151f53481941cd569fbde81f5ff0097f1d2103"
+    },
+    {
+      "path": "lios-pi/src/pi/shared/normalize.py",
+      "bytes": 12140,
+      "sha256": "3674c3483baf33c8469bd46bb9df309ba1759504ce27234999339705ec4acf2d"
+    },
+    {
+      "path": "lios-pi/src/pi/training/config.py",
+      "bytes": 7329,
+      "sha256": "6646427811a9dbbbc47145a5c797c6d60f7bb376c65270eaeac741dab2165ba3"
+    },
+    {
+      "path": "lios-pi/src/pi/training/instance_config.py",
+      "bytes": 5954,
+      "sha256": "cf4bc427365f281e9fea0eaa9d62d50d31ea3ea3f1fccd138aece60ff753ae7d"
+    },
+    {
+      "path": "lios-pi/src/pi/training/optimizer.py",
+      "bytes": 690,
+      "sha256": "c96a96e4604498cab9f05ebd74f5af09470b86e924a60b2742e82769af82cbb0"
+    },
+    {
+      "path": "lios-pi/src/pi/transforms.py",
+      "bytes": 13789,
+      "sha256": "3412d6cbd0409f649f4bdd18078d425927492bb56e78bb5ac0946e73afd3bc77"
+    },
+    {
+      "path": "lios-pi/tests/operator/test_embed.py",
+      "bytes": 3063,
+      "sha256": "d9ee43344b8ed3dcd1aadf41fb04db1d3009e85df8b99ffb76ee016505dcf75a"
+    },
+    {
+      "path": "lios-pi/tests/test_attention_masks.py",
+      "bytes": 1284,
+      "sha256": "f7c0454bb6fa32ced63a268f524ec59dc3c9751c4892a0e2c7525e4cc175fde8"
+    },
+    {
+      "path": "lios-pi/tests/test_data_transforms.py",
+      "bytes": 5972,
+      "sha256": "00408c6f5d69d071e484c9abb511ed2922c106a23a62e9d02d2e7ee99ec7a8a7"
+    },
+    {
+      "path": "lios-pi/tests/test_execution_duration.py",
+      "bytes": 941,
+      "sha256": "a7559ab1160378f9c04be967eaddd103df84872212c105ffbe040d2da1c940e0"
+    },
+    {
+      "path": "lios-pi/tests/test_execution_limits.py",
+      "bytes": 1290,
+      "sha256": "13330fdc064e28a34e0463d52465fdb2e94efc80bdfc6fc35c915579f38cd794"
+    },
+    {
+      "path": "lios-pi/tests/test_gradient_checkpointing.py",
+      "bytes": 2546,
+      "sha256": "3b5e83f60714914c50a17a26ebfd6e965a7348fe5a492d3fa3043d5510aa9fc6"
+    },
+    {
+      "path": "lios-pi/tests/test_home_sequence.py",
+      "bytes": 3569,
+      "sha256": "cfd7cf6d9567fcc7d7fdbe21a9f628e2912ee4cb8eef7d9ed0e7bd3dbe79bcb3"
+    },
+    {
+      "path": "lios-pi/tests/test_inference_init.py",
+      "bytes": 5056,
+      "sha256": "b877b92164550df53ce0e44b9338558b98738f448a846de5e5c1e065e45c0853"
+    },
+    {
+      "path": "lios-pi/tests/test_joint_sdpa.py",
+      "bytes": 2993,
+      "sha256": "119f466380902a6303dd1b0da1ef302b2988480bebd55da2050f043da62fc731"
+    },
+    {
+      "path": "lios-pi/tests/test_lerobot_v3.py",
+      "bytes": 6164,
+      "sha256": "d852dc07fdda940efb9b8b75b748ea93063f83ad2b392f5a081edc26d41792bf"
+    },
+    {
+      "path": "lios-pi/tests/test_manual_release.py",
+      "bytes": 3370,
+      "sha256": "15a300bf9269d2a33f3afcfcda579e7ed271e37babc19870b4fd3c7dda336b6d"
+    },
+    {
+      "path": "lios-pi/tests/test_position_hold.py",
+      "bytes": 2427,
+      "sha256": "a2043e8b20bcdece08ec4d98d9ce5488d218eadd2add70e93ab061311f8c3fad"
+    },
+    {
+      "path": "lios-pi/tests/test_resume_sampler.py",
+      "bytes": 1737,
+      "sha256": "d90c888c0f1b7a961402f5d28a99f8a86152f17b8c1302ec465d99e595db07b6"
+    },
+    {
+      "path": "lios-pi/tests/test_robotctl.py",
+      "bytes": 14268,
+      "sha256": "207c9d51980077f434d0e3789e676fbc32e722e7895d61f18d50728781375bd0"
+    },
+    {
+      "path": "lios-pi/tests/test_rtc.py",
+      "bytes": 7010,
+      "sha256": "5cf09465d8e915129226c6f63a86678f0a3544e593259ca31a7fe6e568ffc529"
+    },
+    {
+      "path": "lios-pi/tests/test_so101_deployment.py",
+      "bytes": 1646,
+      "sha256": "a19177ce4bea0c5ae99f80e1830d94ae96587c626ab6231b34beaa8938391d9d"
+    },
+    {
+      "path": "lios-pi/tests/test_so101_relocation.py",
+      "bytes": 3296,
+      "sha256": "47250c12d777975fa397fb79e9364605c43cdf529abbac758d5b9e6455487c7c"
+    },
+    {
+      "path": "lios-pi/tests/test_training_smoke_controls.py",
+      "bytes": 3586,
+      "sha256": "0590c0abbed16bb6a7641fd8ee30aa85fcaafd4853ce3416498fbda32a8678c5"
+    },
+    {
+      "path": "lios-pi/tests/test_ws_consumer_handoff.py",
+      "bytes": 1509,
+      "sha256": "5234d2caae0dcc626e1cca2f36f8a580dad0afd62b2f77cc37b511f57568ab62"
+    },
+    {
+      "path": "lios-webrtc/.env.example",
+      "bytes": 1469,
+      "sha256": "58b1034bac3ad538c702391c80db2f468442d13dc08e372014b8949077a41d62"
+    },
+    {
+      "path": "lios-webrtc/.gitignore",
+      "bytes": 719,
+      "sha256": "e399b115cdbbef8b2fc3c56497ec18369a9383f058f12a697c04450eb8deb118"
+    },
+    {
+      "path": "lios-webrtc/AGENTS.md",
+      "bytes": 2890,
+      "sha256": "6a070cc7808a8cbe6226aa791ce99a58e4cb11df21de12a60a8f8eec10b38eef"
+    },
+    {
+      "path": "lios-webrtc/CHANGELOG.md",
+      "bytes": 1514,
+      "sha256": "3b1907683c0d780b3f43de6d460f07c3ff4eaebade9183e121ebee321a41536d"
+    },
+    {
+      "path": "lios-webrtc/CODE_OF_CONDUCT.md",
+      "bytes": 1246,
+      "sha256": "9573bdaf9cac4fffd65a28a5a2ebff971bcda28f2b982ba26b0767ddc4308c65"
+    },
+    {
+      "path": "lios-webrtc/CONTRIBUTING.md",
+      "bytes": 2343,
+      "sha256": "aeb4e06f885fba25a94cede83f650ebf8d1b4bddf19e67a71f257a0ffcafa535"
+    },
+    {
+      "path": "lios-webrtc/LICENSE",
+      "bytes": 11342,
+      "sha256": "0157445be366f0563b90c91c38e37d6372101d0d0ca59cffc113a8ee2a35ca71"
+    },
+    {
+      "path": "lios-webrtc/README.md",
+      "bytes": 8212,
+      "sha256": "440eaeb3cb71b09b75fa6f89755a7d8e6bfd33608f0596e10b5ad087eae75e22"
+    },
+    {
+      "path": "lios-webrtc/README.zh-CN.md",
+      "bytes": 7611,
+      "sha256": "72b3a33d0dfbe3d354a07225c538730db040b0b0ff5a2d49ddd1ac323498b79c"
+    },
+    {
+      "path": "lios-webrtc/SECURITY.md",
+      "bytes": 1422,
+      "sha256": "9acd191f7a387874c3e61d8ec8a255c884dee892e006f972a0c79ce34a3260a3"
+    },
+    {
+      "path": "lios-webrtc/USER_GUIDE.md",
+      "bytes": 16954,
+      "sha256": "f33865504066584704c6eb49b49517cc91d26c1898933018482f4f05f5eaaee9"
+    },
+    {
+      "path": "lios-webrtc/USER_GUIDE.zh-CN.md",
+      "bytes": 14581,
+      "sha256": "09111d7b093d203964a9a9b4a83166503d36306d5553630939e85a9206094782"
+    },
+    {
+      "path": "lios-webrtc/benchmark/README.md",
+      "bytes": 3833,
+      "sha256": "444957086898cf4bde844e6a2d4df332d00c9d5a5946d683fa55ff83be85271b"
+    },
+    {
+      "path": "lios-webrtc/benchmark/cross_p2p_latency_bidir.sh",
+      "bytes": 3656,
+      "sha256": "a63529e48ed1a686445662aa7b1b5378fae362d20e92b5249c577bd38fd6ecaf"
+    },
+    {
+      "path": "lios-webrtc/benchmark/cross_p2p_sweep.sh",
+      "bytes": 1491,
+      "sha256": "89d730cf02212f051d038a11997ec0c60bd534883374360da3c155ddd4128b8b"
+    },
+    {
+      "path": "lios-webrtc/benchmark/livekit/cloud_pub.sh",
+      "bytes": 1683,
+      "sha256": "f1a283bed5c53076a570cac5d3aa99a949a0d578b6b5d92c19b6f7ccc14a93c4"
+    },
+    {
+      "path": "lios-webrtc/benchmark/livekit/common.py",
+      "bytes": 5819,
+      "sha256": "a125ad3b140e72ab33bda85f46db66c61982fffb81d67d617d77b74374b872ae"
+    },
+    {
+      "path": "lios-webrtc/benchmark/livekit/cross_lk_latency_bidir.sh",
+      "bytes": 3234,
+      "sha256": "b27b60be566b6e380890720d2e061a70eda318477c3f15e31c2a78f3f55a3ff0"
+    },
+    {
+      "path": "lios-webrtc/benchmark/livekit/livekit_publisher.py",
+      "bytes": 3416,
+      "sha256": "17e8d81dadecf6c62de62e86968fc839c472e277ca3c55275fa4549662079fd1"
+    },
+    {
+      "path": "lios-webrtc/benchmark/livekit/livekit_receiver_ts.py",
+      "bytes": 3360,
+      "sha256": "d80464a5e8d866f441a95401d61739124bdbeca97c92c68fb6ce3098084b5366"
+    },
+    {
+      "path": "lios-webrtc/benchmark/livekit/livekit_sender_ts.py",
+      "bytes": 2541,
+      "sha256": "eb61e70be509f67f8f09e502907cec2028b9e0dd3d7b235dd02e23bbcd5b1494"
+    },
+    {
+      "path": "lios-webrtc/benchmark/livekit/livekit_subscriber.py",
+      "bytes": 2659,
+      "sha256": "14743ecd0e9ee24d26b9ff2b4b1b3965b2f1029440eadcf753f045633091df2e"
+    },
+    {
+      "path": "lios-webrtc/benchmark/livekit/lk_rust/Cargo.lock",
+      "bytes": 94366,
+      "sha256": "29cd0e8f2f67cbbbe1694e2f1bb95b7f06e7fb0d4f2056ec27ac28ad09d5036d"
+    },
+    {
+      "path": "lios-webrtc/benchmark/livekit/lk_rust/Cargo.toml",
+      "bytes": 197,
+      "sha256": "e876af39265e87f04266c894a911a2bec98754f0678e373b6de1be625864aa41"
+    },
+    {
+      "path": "lios-webrtc/benchmark/livekit/lk_rust/src/main.rs",
+      "bytes": 5493,
+      "sha256": "b31ed1396ea1dda7216f21366830087944602f34423c8daf422cca9e35f3f1fe"
+    },
+    {
+      "path": "lios-webrtc/benchmark/livekit/remote_sub.sh",
+      "bytes": 1788,
+      "sha256": "e400944c4724087b2b049c54a8c36aa312e14b10b71f51589af352842796e5af"
+    },
+    {
+      "path": "lios-webrtc/benchmark/livekit/run_lat.sh",
+      "bytes": 3914,
+      "sha256": "46ee7f81c045a6e5324269f433b2044452bc92a48ce7a2ee59be15d76e584100"
+    },
+    {
+      "path": "lios-webrtc/benchmark/livekit/run_rust_throughput.sh",
+      "bytes": 1504,
+      "sha256": "79972277e0d5597ccafa8e4ae9c098c8666ba50a06ba1d2b87e16d94c90b63a3"
+    },
+    {
+      "path": "lios-webrtc/benchmark/livekit_config_sshtunnel.yaml",
+      "bytes": 1254,
+      "sha256": "5a54917d6572e9aaff03cc7a57803a3e87b2e2495e2f64a6f8e066c6c7335b39"
+    },
+    {
+      "path": "lios-webrtc/benchmark/make_figures.py",
+      "bytes": 15924,
+      "sha256": "c7148dba5710ae933612634369ff743c934a950711f78411c87442f4d15faf64"
+    },
+    {
+      "path": "lios-webrtc/benchmark/relat_repeat.sh",
+      "bytes": 2042,
+      "sha256": "54b378e9474dd6e86d07a8ef75810359f794c6f6641c6a63f07891e325618fb5"
+    },
+    {
+      "path": "lios-webrtc/benchmark/rtp_latency/rtp_latency_receiver.py",
+      "bytes": 2071,
+      "sha256": "e95e4380a9513ba15e8f643e713ce521aac2ff825ba6810dcec024bbf4e71b43"
+    },
+    {
+      "path": "lios-webrtc/benchmark/rtp_latency/rtp_latency_sender.py",
+      "bytes": 2410,
+      "sha256": "6992c8e6089192cc2163c12af67a3a6db06b2b256beac744ec9690da77c6d9e8"
+    },
+    {
+      "path": "lios-webrtc/benchmark/throughput/common.py",
+      "bytes": 5819,
+      "sha256": "a125ad3b140e72ab33bda85f46db66c61982fffb81d67d617d77b74374b872ae"
+    },
+    {
+      "path": "lios-webrtc/benchmark/throughput/gen_clip.py",
+      "bytes": 1490,
+      "sha256": "bd8420563eaf56c0294268596a92149181aa92a4f2c7fd0e0472c35361e44b1a"
+    },
+    {
+      "path": "lios-webrtc/benchmark/throughput/gst_receiver.py",
+      "bytes": 3803,
+      "sha256": "7f0ba720fb1a9a6d1600b55f2754bfa78a3f3b042017c32242b6226231b20ae2"
+    },
+    {
+      "path": "lios-webrtc/benchmark/throughput/gst_receiver_appsink.py",
+      "bytes": 3912,
+      "sha256": "4d2deb9fe976dd5bc667b65eaf693d849efabb7c043ff61143ee8363530b0513"
+    },
+    {
+      "path": "lios-webrtc/benchmark/throughput/gst_sender.py",
+      "bytes": 2737,
+      "sha256": "661fc1ad0fe4bc28aa7103f4059189c7f688ba9b7810d62af3014dd213212437"
+    },
+    {
+      "path": "lios-webrtc/benchmark/throughput/gst_sender_clip.py",
+      "bytes": 3655,
+      "sha256": "8cf32d3233e8b00224f29120bcd198248bd210e7d0191b0fff3046784d01c15d"
+    },
+    {
+      "path": "lios-webrtc/benchmark/throughput/sweep_gst.sh",
+      "bytes": 2946,
+      "sha256": "fa9c85300cf906b70ee1e1a741df5a098a52daf7e4acf700aaf5c45e6ee573da"
+    },
+    {
+      "path": "lios-webrtc/benchmark/two_camera_receiver_inferbuf_1fps_ts.py",
+      "bytes": 8171,
+      "sha256": "6cd8b8ae1ad4c1f2d0e84c9396ddfbb4af2de870160eb8185ed95360c4431dd0"
+    },
+    {
+      "path": "lios-webrtc/benchmark/two_camera_sender_1fps_ts.py",
+      "bytes": 4231,
+      "sha256": "e1d062da65bc94216c0ab0afb104acc7acd7119f399a3b8769d1c62290660bf7"
+    },
+    {
+      "path": "lios-webrtc/cliff.toml",
+      "bytes": 1296,
+      "sha256": "a1e6ff0c03d39df9c0197f08e50b6079677f376ef6f528b728729a1cc7e24de1"
+    },
+    {
+      "path": "lios-webrtc/design.md",
+      "bytes": 7759,
+      "sha256": "1094b7be111e04ceab70e9b201386194c2fe8c687a73c54aac971951e579402d"
+    },
+    {
+      "path": "lios-webrtc/dockerfiles/Dockerfile",
+      "bytes": 1217,
+      "sha256": "0dde3380f824bee6e8e234e97f9a2b3ff8916fd66d29e98f1b4e10b8957d67e1"
+    },
+    {
+      "path": "lios-webrtc/dockerfiles/tsinghua-apt-noble",
+      "bytes": 687,
+      "sha256": "5a4b53d46b3a2f8f6251e9459df5b48be08f4945047364f8dbda455f44ce5f51"
+    },
+    {
+      "path": "lios-webrtc/docs/design/RESTORE_DESIGN.md",
+      "bytes": 17128,
+      "sha256": "6fdba1fe264570ce5ab7cdbacb62663898ff4db47471b9f040bcfea0317c88ed"
+    },
+    {
+      "path": "lios-webrtc/docs/design/gpu-sink.md",
+      "bytes": 10204,
+      "sha256": "81e07f4be4565d5d3d65c9367bd02c60aa5418becce930b33136fce891da5547"
+    },
+    {
+      "path": "lios-webrtc/docs/gst-report/arch_imgtx.png",
+      "bytes": 155838,
+      "sha256": "b95a6677ea4dcd94827bc39efc0f8c6b7f12ecd99bd67e2817bb06892567f1e8"
+    },
+    {
+      "path": "lios-webrtc/docs/gst-report/latency_compare.png",
+      "bytes": 62579,
+      "sha256": "19d7257dab10c7a4ec46a4e044e80e6fbfe1c69152d10155d2c04a8d35a24b33"
+    },
+    {
+      "path": "lios-webrtc/docs/gst-report/throughput_jitter_violin.png",
+      "bytes": 109121,
+      "sha256": "34992dcda7640fe7c4eb10629f09f308ca37da1b100bb3005fd4b31b0fdf6191"
+    },
+    {
+      "path": "lios-webrtc/docs/gst-report/throughput_samecontent.png",
+      "bytes": 150350,
+      "sha256": "2ca6f81316880149fb84c45987c87e5b2cdd565f9afb0b69ab33e3d6c042d1b7"
+    },
+    {
+      "path": "lios-webrtc/docs/usage/gpu-sink.md",
+      "bytes": 4256,
+      "sha256": "254a563d49705a03fc47ffaa734f2e4a0190a51b0fb3ba5a5eba3f08c4a975b8"
+    },
+    {
+      "path": "lios-webrtc/docs/usage/inference_buffer_v2.md",
+      "bytes": 4443,
+      "sha256": "c9e4bec155a7f956f8503f810349d4731d6ce42ba032b8d845c7699e2adda935"
+    },
+    {
+      "path": "lios-webrtc/examples/two_camera_receiver_inferbuf.py",
+      "bytes": 14732,
+      "sha256": "eb9a893f784031eb185e831a98b45b17dcdd01e4283bf9a7d049c83236466817"
+    },
+    {
+      "path": "lios-webrtc/examples/two_camera_sender.py",
+      "bytes": 4880,
+      "sha256": "6baa6d82d9abc51c58b3ee319538ce4955abceeef14612ad330dd0d90fa5adc1"
+    },
+    {
+      "path": "lios-webrtc/justfile",
+      "bytes": 224,
+      "sha256": "2ef16c331faaa31cc071f9401b21fb0a44bfde54a6fe02e9b6d97a0210befbeb"
+    },
+    {
+      "path": "lios-webrtc/logo/LiOS_logo.png",
+      "bytes": 125467,
+      "sha256": "9308556f092973e515af09f0e1e6eb809df130ae2cb3353010b3bca86c63e119"
+    },
+    {
+      "path": "lios-webrtc/pixi.lock",
+      "bytes": 349132,
+      "sha256": "0c34f14577c6b3fa106398e04d3e76366850a2515f531045b2a9c4b595509572"
+    },
+    {
+      "path": "lios-webrtc/pixi.toml",
+      "bytes": 3813,
+      "sha256": "e62e5136c93e6824667085545b6c5c1db72d6367b52d9c8b8139f0a0f9b1378a"
+    },
+    {
+      "path": "lios-webrtc/pyproject.toml",
+      "bytes": 2986,
+      "sha256": "7ae9335d3d69661741c5cb08c7e4b3e8b8b4604d79c2b595d00ff846019c0b9e"
+    },
+    {
+      "path": "lios-webrtc/signal-server/LICENSE",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "lios-webrtc/signal-server/cmd/root.go",
+      "bytes": 1446,
+      "sha256": "74c6c345658a09fce8366611022e47f3346848aa5d14f9690b98d878912aba6b"
+    },
+    {
+      "path": "lios-webrtc/signal-server/cmd/serve.go",
+      "bytes": 1352,
+      "sha256": "b55a021a04917dc491371f81473dcff6fa0fd3ce9b926e1d17e2f856872d418c"
+    },
+    {
+      "path": "lios-webrtc/signal-server/go.mod",
+      "bytes": 241,
+      "sha256": "d7dbee6240616db81289e6943895b12b46c7f3621a0c5343f1003d50ebe5c954"
+    },
+    {
+      "path": "lios-webrtc/signal-server/go.sum",
+      "bytes": 1071,
+      "sha256": "e77c40525c75b970646c46936fd2eb38f449e098327ca2c0fa7d8df0eaf22564"
+    },
+    {
+      "path": "lios-webrtc/signal-server/main.go",
+      "bytes": 139,
+      "sha256": "331999e8c05a0575dfbaa9665a24e9c8e9c566f517f113386fedd1b00b316cad"
+    },
+    {
+      "path": "lios-webrtc/signal-server/server/server.go",
+      "bytes": 7703,
+      "sha256": "2d3d0b264f7c2fa621f93be46373581d4c43e8131726ae727bd88d4c25ec5f83"
+    },
+    {
+      "path": "lios-webrtc/src/gst_webrtc/__init__.py",
+      "bytes": 1403,
+      "sha256": "03ec8c906fa977dde7f933d6a197796c796a136376c2b93d5b119b899de9ae05"
+    },
+    {
+      "path": "lios-webrtc/src/gst_webrtc/gpu_sink/__init__.py",
+      "bytes": 75,
+      "sha256": "17d1de3fef0c99e32994feec19d7945514a79e77a9c67049b54db441695b1432"
+    },
+    {
+      "path": "lios-webrtc/src/gst_webrtc/gpu_sink/core.py",
+      "bytes": 10425,
+      "sha256": "ee80aeaca83a6864a98266c8ef4bb8c66ebde376f7711d117795dcb48ad56dce"
+    },
+    {
+      "path": "lios-webrtc/src/gst_webrtc/inference_buffer_v2.py",
+      "bytes": 14597,
+      "sha256": "17f03422d875ab63a5ce788af68b3a61bc95235b09598c313253743ed271b102"
+    },
+    {
+      "path": "lios-webrtc/src/gst_webrtc/receiver/__init__.py",
+      "bytes": 63,
+      "sha256": "4abf99c8060f6faddd155d80f671b5b2c24f748cc73dd1a91c5042735d589276"
+    },
+    {
+      "path": "lios-webrtc/src/gst_webrtc/receiver/core.py",
+      "bytes": 9610,
+      "sha256": "120d174ac5d50a165fbd4a177b61e7c2de8a0abee302a8f17848564ed10623a9"
+    },
+    {
+      "path": "lios-webrtc/src/gst_webrtc/sender/__init__.py",
+      "bytes": 100,
+      "sha256": "a5cf1615acea11fb855ddbca9da3bc1041b18e5b1800084d154bab62ed541088"
+    },
+    {
+      "path": "lios-webrtc/src/gst_webrtc/sender/core.py",
+      "bytes": 20106,
+      "sha256": "f63adad092822421652f961499eabb794d660f45917e5ba656c871c533fcf32f"
+    },
+    {
+      "path": "lios-webrtc/src/gst_webrtc/services/__init__.py",
+      "bytes": 463,
+      "sha256": "4ab19e018c1f62593b65b2c2203b7e43e9f7993b807f5953b967b2c3b527221c"
+    },
+    {
+      "path": "lios-webrtc/src/gst_webrtc/services/flask_api.py",
+      "bytes": 8388,
+      "sha256": "50531a667a7ee9360b5e8c6647b0a8dd7962f672a2af1e29bb947a358b60b958"
+    },
+    {
+      "path": "lios-webrtc/src/gst_webrtc/services/server_suite.py",
+      "bytes": 1010,
+      "sha256": "cc8200627227056f0ac0ae76376e38b6c9ee2b547fa8b7554992f4142f645cbc"
+    },
+    {
+      "path": "lios-webrtc/src/gst_webrtc/services/ws_json_api.py",
+      "bytes": 12125,
+      "sha256": "95b052842e60eec43370b038706aa22761dca38dd57a1f7f110ee22c051d9542"
+    },
+    {
+      "path": "lios-webrtc/src/gst_webrtc/services/ws_json_client.py",
+      "bytes": 9642,
+      "sha256": "0bcf83b542303b83c42b7bea90349dfd99faff1f2f3c1d12265d16cd86c34509"
+    },
+    {
+      "path": "lios-webrtc/src/gst_webrtc/ws_signal/__init__.py",
+      "bytes": 104,
+      "sha256": "95c4e0838d34ae715e96d5a364bb88855b85aea51f0fc89bb3d496a592338d6b"
+    },
+    {
+      "path": "lios-webrtc/src/gst_webrtc/ws_signal/signal_client.py",
+      "bytes": 5542,
+      "sha256": "c7da97a52a6fba6bc2c45a18cefadcf995a8c07b46c2f47a939d379de22e22c6"
+    },
+    {
+      "path": "lios-webrtc/tests/_fakes.py",
+      "bytes": 2024,
+      "sha256": "5332ce0a4ffc566f4c1ba7bfcf9f4997da8b6c787f6a26f2c25cabfa1c0da184"
+    },
+    {
+      "path": "lios-webrtc/tests/e2e/.gitignore",
+      "bytes": 63,
+      "sha256": "e513d67dbf619002d1c56a127c85717997cd10adf2a73a747e03d9d22d06e28d"
+    },
+    {
+      "path": "lios-webrtc/tests/e2e/README.md",
+      "bytes": 1548,
+      "sha256": "5e7287a3dfeac8bdbb0775165020ebf16cbb54ec82b09891665cb07db4b0770d"
+    },
+    {
+      "path": "lios-webrtc/tests/e2e/appsink_msid_e2e.py",
+      "bytes": 8644,
+      "sha256": "21664faf1c4aa3fdbbb34e0e9a0a440d48a0a72c6b36c4f01d2f6a7fb8ea0ea9"
+    },
+    {
+      "path": "lios-webrtc/tests/e2e/gpu_sink.sh",
+      "bytes": 4446,
+      "sha256": "393ebdfa66ae0af1cb831eca2745fd48fa0c35ba2e4d06272ddcc0a6dd7a664f"
+    },
+    {
+      "path": "lios-webrtc/tests/e2e/gpu_sink_save.py",
+      "bytes": 4633,
+      "sha256": "cdbaccb6266d7da96bae2c9587bca47d41f76c249da0b06e84ca9a14cc4c6325"
+    },
+    {
+      "path": "lios-webrtc/tests/e2e/inference_buffer_v2_ipc.py",
+      "bytes": 4143,
+      "sha256": "91db7531df7a8a555f658807dd05be130f715a304cf0b870432193953702e931"
+    },
+    {
+      "path": "lios-webrtc/tests/e2e/ipc_two_procs/reader.py",
+      "bytes": 1487,
+      "sha256": "2dfc63a7dc321bee07e43822ab8886f7fee9709c69aa94d330dca13b9008a07d"
+    },
+    {
+      "path": "lios-webrtc/tests/e2e/ipc_two_procs/run.sh",
+      "bytes": 3465,
+      "sha256": "5ddf15a9c43dbf74d8733bb16b4d45f2a69cc184fdcd1bf57b4f58f7ef85b8bb"
+    },
+    {
+      "path": "lios-webrtc/tests/e2e/ipc_two_procs/writer.py",
+      "bytes": 1561,
+      "sha256": "cbef85c3532b49620e81a519f1093195249b8d1ce277eb56aa52f7e6a08c4607"
+    },
+    {
+      "path": "lios-webrtc/tests/e2e/ipc_two_procs_flask/README.md",
+      "bytes": 943,
+      "sha256": "b53bb0d9a5e4de4db1ed148e0740da7deec84b43641ce55635174e8ea5a8e136"
+    },
+    {
+      "path": "lios-webrtc/tests/e2e/ipc_two_procs_flask/reader.py",
+      "bytes": 3272,
+      "sha256": "f7373de041045e7f0dabf37bea6f282f230695d761b216f46e3a9b564cb53f78"
+    },
+    {
+      "path": "lios-webrtc/tests/e2e/ipc_two_procs_flask/run.sh",
+      "bytes": 3497,
+      "sha256": "a48a531266819979b3b4a690662de942e389e8cf6a083a93c0968d6a583cdccc"
+    },
+    {
+      "path": "lios-webrtc/tests/e2e/ipc_two_procs_flask/writer.py",
+      "bytes": 3244,
+      "sha256": "be59c25205064c884ace1f2ce8b70aca22593ce39d5cf68d3e5d7a0346bfa785"
+    },
+    {
+      "path": "lios-webrtc/tests/e2e/receiver.py",
+      "bytes": 818,
+      "sha256": "1af72ba19fa3f64560f000abf3c8eaa8de9ce3d76460b43d1e923830c7bc011d"
+    },
+    {
+      "path": "lios-webrtc/tests/e2e/receiver_msid_save.py",
+      "bytes": 7362,
+      "sha256": "d00efc424a206b2317727616a47d3c7c31be7e1964e1906f0d7cc907b4d37de0"
+    },
+    {
+      "path": "lios-webrtc/tests/e2e/sender.py",
+      "bytes": 4331,
+      "sha256": "4a5fe4d32b219f812b4a3ac768acf979c3a3134dcc04c0bc772544a4ee37f393"
+    },
+    {
+      "path": "lios-webrtc/tests/e2e/sender_sw.py",
+      "bytes": 1108,
+      "sha256": "52ce18dc01705a219b42b01509778fac2938862f49cdffbc54c9521c7163e2fd"
+    },
+    {
+      "path": "lios-webrtc/tests/e2e/smoke.sh",
+      "bytes": 5453,
+      "sha256": "279365c2cc6390b58bf51b165d6c1090948ebf9b516eecff847d30b6691440fe"
+    },
+    {
+      "path": "lios-webrtc/tests/e2e/ws_json_e2e.py",
+      "bytes": 2559,
+      "sha256": "23749c2ac3873bde16ef12ed7eb8d6fd597d1b14d29fd4b1a296852a46efa43a"
+    },
+    {
+      "path": "lios-webrtc/tests/test_gpu_sink.py",
+      "bytes": 1919,
+      "sha256": "a766c602a27f9bb02a4bcba82cc0951c29e2cb6446ccee9ffb03467a275e321c"
+    },
+    {
+      "path": "lios-webrtc/tests/test_inference_buffer_v2.py",
+      "bytes": 3016,
+      "sha256": "3f5192ba1a99d49e99a1586fcfdaa9180fcc7d7e0225dfd852c8c00b82cb7b5f"
+    },
+    {
+      "path": "lios-webrtc/tests/test_receiver_logic.py",
+      "bytes": 4474,
+      "sha256": "21661b07a906b6a93f78ad785ad229611ee3283e301e11b1d4a1111e06a2e988"
+    },
+    {
+      "path": "lios-webrtc/tests/test_sender_logic.py",
+      "bytes": 7263,
+      "sha256": "ae8e5beac299f4fa9ba92da412d12c287dd0a095b5447903c46c31a2814354b3"
+    },
+    {
+      "path": "media/README.md",
+      "bytes": 648,
+      "sha256": "27ebd5fb1b4369948b06510ad016269792c1ce45d215ca64f3d2a351bb748028"
+    },
+    {
+      "path": "media/images/camera_views.jpg",
+      "bytes": 40776,
+      "sha256": "ac3c47c918d2ef9b1e649a7396c6a445aea6d050acd01a0b986325a5c2e67ca1"
+    },
+    {
+      "path": "media/images/panel_historical.png",
+      "bytes": 244012,
+      "sha256": "909050597b2c023d4b7f4de6f16b4f94015144d926e48e23126795b0099e26cb"
+    },
+    {
+      "path": "media/images/robot_workspace.jpg",
+      "bytes": 80626,
+      "sha256": "bdf8b474e47c3216b7ace64d108d86f3aaf7259b77e86dc00415b84c004973fd"
+    },
+    {
+      "path": "media/images/training_loss.png",
+      "bytes": 78733,
+      "sha256": "ef3609e611dae6b1a8f6ae60bbc5b007ea9536d63a299cff235c948ab000e37a"
+    },
+    {
+      "path": "media/images/training_views.jpg",
+      "bytes": 534913,
+      "sha256": "1ce9d3ffb98b4c1f0fec76d4ca01a2e11f5225cfdbab719cf180b9728561b4db"
+    },
+    {
+      "path": "media/videos/README.md",
+      "bytes": 613,
+      "sha256": "629a0a1a177e7fd062236e03a3baa62e90de3c9a70ef7648759cc0c68e214659"
+    },
+    {
+      "path": "models/local100000/BASE_MODEL_CARD.md",
+      "bytes": 5139,
+      "sha256": "5660a59c4bc742dbab3b0f8a109442436b8378200cdbdf6ed35045efe16cdfdc"
+    },
+    {
+      "path": "models/local100000/GEMMA_PROHIBITED_USE.txt",
+      "bytes": 3853,
+      "sha256": "71375e40d1fd4f9221515ba6ca3d6aa141cd8e9af1d0f61baadc883af5a87ebe"
+    },
+    {
+      "path": "models/local100000/GEMMA_TERMS.txt",
+      "bytes": 9030,
+      "sha256": "34b90ac3f947577112488b8c4cf5ffd6bf3bba2d38b7adb0e18360ac1af5d58b"
+    },
+    {
+      "path": "models/local100000/Notice.txt",
+      "bytes": 401,
+      "sha256": "68f2ce0d4c1ec6e52728c355361213cc176a3af786683c540933d80563c901da"
+    },
+    {
+      "path": "models/local100000/README.md",
+      "bytes": 909,
+      "sha256": "c54a50d6d03f541d00b0d40f5d228ce6201dd17084591f1cb04a71ac05782402"
+    },
+    {
+      "path": "models/local100000/SHA256SUMS",
+      "bytes": 855,
+      "sha256": "707d99b8159b759103ad71aae15d21a040fa0253b12306cc89b07252cb1cbdec"
+    },
+    {
+      "path": "models/local100000/WEIGHTS_NOTICE.md",
+      "bytes": 862,
+      "sha256": "2eff8ff0e989e204b93ba0ca18b531924617c10a261a6465956c9e7945be3fbe"
+    },
+    {
+      "path": "models/local100000/manifest.json",
+      "bytes": 2242,
+      "sha256": "1f3b8bc87feb7d7b917865fbd27f08523b04d0e713a6dc52a10ba3bbf73230f0"
+    },
+    {
+      "path": "tools/configure_local.py",
+      "bytes": 2218,
+      "sha256": "45570f7aaf6619cfdd13a88e6bf5054e219657b903c6f52f17a67bd14cbb009a"
+    },
+    {
+      "path": "tools/weights.py",
+      "bytes": 4512,
+      "sha256": "bb589d8c3ab7972926bbd2becd98488ac9155f7814240fcd3d3d1122c62cf691"
+    }
+  ]
+}

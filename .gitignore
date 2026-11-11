@@ -1,0 +1,49 @@
+# Environments, caches, logs
+.git/
+.pixi/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+logs/
+*.log
+.DS_Store
+# Large artifacts belong in release attachments, not source Git history
+checkpoints/
+weights/
+model_weights/
+*.distcp
+*.safetensors
+*.tar.zst.part-*
+*.pt
+*.pth
+# Raw dataset and machine-specific state
+local_assets/
+datasets/
+training_runs/
+.env
+runtime.env
+local_only/
+deployment/so101/config.json
+deployment/so101/machine.json
+deployment/so101/home_pose.json
+deployment/so101/models.json
+deployment/so101/calibration/
+deployment/so101/*_status.json
+deployment/so101/*_result.json
+deployment/so101/received_action.json
+deployment/so101/latest_prediction.json
+deployment/so101/STOP_MOTION
+deployment/so101/INFERENCE_RESET_GENERATION
+deployment/so101/.robotctl.lock
+deployment/so101/.reset_in_progress/
+deployment/so101/runtime_archive/
+deployment/so101/validation/
+# Demo videos: the browser-compatible h264 cut is committed (6.4 MB); keep the
+# HEVC master and any other re-encodes out of Git history.
+media/videos/*.mov
+media/videos/*.mkv
+media/videos/*.webm
+media/videos/*.bak
+!media/videos/success_demo_h264.mp4

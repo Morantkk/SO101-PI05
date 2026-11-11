@@ -1,0 +1,15 @@
+{
+  "source_commit": "ef6f8746455ebabe74284ba244590b93f05f3a78",
+  "checkpoint": "local100000",
+  "frozen_backbone": true,
+  "step": 100000,
+  "batch_size": 8,
+  "configured_epochs": 10,
+  "intended_steps": 108070,
+  "actual_epochs": 9.25326177477561,
+  "training_episodes": 117,
+  "training_frames": 86458,
+  "includes_full_parameter_cloud_model": false,
+  "weights_form": "Complete raw DCP checkpoint from frozen-backbone/action-expert training; not a head-only tensor file",
+  "source_robot_driver_commit": "4aaff99be4a1d81568c08c8f0296b41b40c99ec4"
+}

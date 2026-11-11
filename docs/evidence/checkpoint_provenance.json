@@ -1,0 +1,8 @@
+{
+  "saved_step": 100000,
+  "train_state": {
+    "completed_steps": 100000,
+    "optimizer_format": "named_v1"
+  },
+  "metadata_file_bounds_valid": true
+}

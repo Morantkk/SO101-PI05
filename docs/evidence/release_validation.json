@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-10",
+  "scope": "Frozen-backbone local100000 release copy only; no robot operation or upload",
+  "cpu_tests": {
+    "passed": 74,
+    "files": [
+      "test_home_sequence.py",
+      "test_position_hold.py",
+      "test_robotctl.py",
+      "test_inference_init.py",
+      "test_execution_limits.py",
+      "test_execution_duration.py",
+      "test_rtc.py",
+      "test_manual_release.py",
+      "test_so101_relocation.py"
+    ],
+    "runtime": "Existing LiOS Pixi dev interpreter, release-copy Python/test paths explicitly selected"
+  },
+  "weights": {
+    "parts": 9,
+    "compressed_bytes": 8427748253,
+    "original_bytes": 16575217732,
+    "all_parts_sha256_verified": true,
+    "decompressed_members_match_original_sha256": true,
+    "decompressed_raw_files_written": false,
+    "full_restore_not_performed_reason": "Insufficient space for another 16.57 GB copy; verified by full streaming decompression instead"
+  },
+  "restore_tool_tests": [
+    "synthetic streamed verification",
+    "synthetic restoration",
+    "existing destination rejection",
+    "corrupt part rejection"
+  ],
+  "source_checks": [
+    "all copied Python files parse",
+    "deployment shell syntax valid",
+    "release-modified Python entrypoints/tools pass ruff",
+    "norm_stats original SHA-256 retained",
+    "split/provenance checksum consistency",
+    "entry-document relative links exist",
+    "git ignore rules tested with temporary index",
+    "all source files below 50 MiB",
+    "credential-pattern scan found no matches",
+    "only local100000 listed by CLI",
+    "home_sequence.py and execution_limits.py identical to current source"
+  ],
+  "not_performed": [
+    "fresh-machine installation",
+    "end-to-end GPU model loading in release folder",
+    "real robot execution",
+    "new success-rate evaluation",
+    "remote repository creation",
+    "upload or push"
+  ],
+  "required_user_items": [
+    "successful demonstration video",
+    "GitHub account/repository",
+    "recipient machine configuration and calibration",
+    "matching original dataset for existing strict data-identity checks"
+  ]
+}
