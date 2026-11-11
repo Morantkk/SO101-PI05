@@ -6,7 +6,7 @@
 README、模型卡、图片、测试、模型分卷清单和工具都在 repo/。
 
 ```bash
-cd /path/to/LiOS_SO101_GitHub_20261110/repo
+cd /path/to/SO101-PI05/repo
 git init -b main
 git add .
 git status --short
