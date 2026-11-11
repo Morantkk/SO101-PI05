@@ -26,21 +26,21 @@ cleanup() {
 trap cleanup EXIT
 interrupt_reset() {
     touch "$DEPLOY_DIR/STOP_MOTION"
-    systemctl --user stop lios-deploy-return-home lios-deploy-manual-release 2>/dev/null || true
+    systemctl --user stop so101-deploy-return-home so101-deploy-manual-release 2>/dev/null || true
 }
 trap 'interrupt_reset; exit 130' INT
 trap 'interrupt_reset; exit 143' TERM
 touch "$DEPLOY_DIR/STOP_MOTION"
 for component in joint-trial return-home state-client; do
-    if [[ "$(systemctl --user show "lios-deploy-$component" --property=LoadState --value)" != not-found ]]; then
-        systemctl --user stop "lios-deploy-$component"
+    if [[ "$(systemctl --user show "so101-deploy-$component" --property=LoadState --value)" != not-found ]]; then
+        systemctl --user stop "so101-deploy-$component"
     fi
 done
 case "$MODE" in
     --stop) echo 'Execution stopped; current position hold retained.' ;;
     --manual)
         echo 'Releasing both arms AND grippers. Support the arms and remove any held load first.'
-        systemd-run --user --wait --pipe --collect --unit=lios-deploy-manual-release \
+        systemd-run --user --wait --pipe --collect --unit=so101-deploy-manual-release \
             --working-directory="$DEPLOY_DIR" \
             "$ROBOT_PYTHON" "$DEPLOY_DIR/manual_release.py" ;;
     --home)
@@ -48,7 +48,7 @@ case "$MODE" in
         "$ROBOT_PYTHON" -c \
             'from pathlib import Path; import sys; Path(sys.argv[1]).unlink(missing_ok=True)' \
             "$DEPLOY_DIR/STOP_MOTION"
-        systemd-run --user --wait --pipe --collect --unit=lios-deploy-return-home \
+        systemd-run --user --wait --pipe --collect --unit=so101-deploy-return-home \
             --working-directory="$DEPLOY_DIR" \
             "$ROBOT_PYTHON" \
             "$DEPLOY_DIR/return_home.py" \

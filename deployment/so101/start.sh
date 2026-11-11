@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Launch the original LiOS transport stack and the SO101 observation adapter.
+# Launch the original SO101-PI05 transport stack and the SO101 observation adapter.
 set -euo pipefail
 DEPLOY_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 source "$DEPLOY_DIR/runtime_env.sh"
@@ -22,11 +22,11 @@ print(",".join(f"{name}={path}@{fps}" for name, path in config["cameras"].items(
 start_unit() {
     local component="$1" working_directory="$2"
     shift 2
-    if systemctl --user is-active --quiet "lios-deploy-$component"; then
-        echo "Already running: lios-deploy-$component"
+    if systemctl --user is-active --quiet "so101-deploy-$component"; then
+        echo "Already running: so101-deploy-$component"
         return
     fi
-    systemd-run --user --collect --unit="lios-deploy-$component" \
+    systemd-run --user --collect --unit="so101-deploy-$component" \
         --working-directory="$working_directory" \
         --property="StandardOutput=append:$DEPLOY_DIR/logs/$component.log" \
         --property="StandardError=append:$DEPLOY_DIR/logs/$component.log" \
@@ -40,17 +40,17 @@ start_unit() {
         "$@"
 }
 
-start_unit signal "$REPO_DIR/lios-webrtc" \
+start_unit signal "$REPO_DIR/so101-transport" \
     "$PIXI_BIN" run --as-is ./signal-server/webrtcssvr serve --addr 127.0.0.1:18080
 for attempt in {1..30}; do
     if curl -s --max-time 1 http://127.0.0.1:18080/ >/dev/null; then break; fi
     sleep 1
 done
-start_unit sender "$REPO_DIR/lios-webrtc" \
+start_unit sender "$REPO_DIR/so101-transport" \
     "$PIXI_BIN" run --as-is python examples/two_camera_sender.py
-start_unit receiver "$REPO_DIR/lios-webrtc" \
+start_unit receiver "$REPO_DIR/so101-transport" \
     "$PIXI_BIN" run --as-is python examples/two_camera_receiver_inferbuf.py --streams 3 --host 127.0.0.1 --port 5082
-start_unit inference "$REPO_DIR/lios-pi" \
+start_unit inference "$REPO_DIR/so101-policy" \
     "$PIXI_BIN" run --as-is -e dev python scripts/deployment/serve_so101.py
 if [[ ! -d "$DEPLOY_DIR/.reset_in_progress" ]]; then
     start_unit state-client "$DEPLOY_DIR" \
@@ -58,4 +58,4 @@ if [[ ! -d "$DEPLOY_DIR/.reset_in_progress" ]]; then
 fi
 start_unit panel "$DEPLOY_DIR" \
     "$ROBOT_PYTHON" panel.py
-echo "Started LiOS deployment. SO101 client only observes; it cannot command motors."
+echo "Started SO101-PI05 deployment. SO101 client only observes; it cannot command motors."

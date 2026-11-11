@@ -1,4 +1,4 @@
-"""Read SO101 joints and consume LiOS JSON actions without commanding motors."""
+"""Read SO101 joints and consume SO101-PI05 JSON actions without commanding motors."""
 
 import json
 import time

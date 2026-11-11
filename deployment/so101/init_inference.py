@@ -10,7 +10,7 @@ from pathlib import Path
 from datetime import datetime
 
 ROOT = Path(__file__).resolve().parent
-UNITS = tuple(f"lios-deploy-{name}" for name in
+UNITS = tuple(f"so101-deploy-{name}" for name in
               ("policy-task", "joint-trial", "return-home", "manual-release", "state-client", "inference",
                "receiver", "sender"))
 TRANSIENT_FILES = (
@@ -34,7 +34,7 @@ def unit_state(unit):
 
 
 def stop_unit(unit):
-    inference_only = unit.removesuffix(".service") == "lios-deploy-inference"
+    inference_only = unit.removesuffix(".service") == "so101-deploy-inference"
     if unit_state(unit).get("LoadState") != "not-found":
         print(f"Stopping {unit}...", flush=True)
         try:

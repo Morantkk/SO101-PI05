@@ -19,12 +19,12 @@ def main():
     config_path, machine_path = DEPLOY / 'config.json', DEPLOY / 'machine.json'
     if config_path.exists() or machine_path.exists():
         raise FileExistsError('Local config already exists. Back it up and edit it explicitly.')
-    source = ROOT / 'lios-pi/assets' / POLICY / ASSET_ID
+    source = ROOT / 'so101-policy/assets' / POLICY / ASSET_ID
     output = ROOT / 'local_assets' / POLICY / ASSET_ID
     pixi = os.environ.get('PIXI_BIN', shutil.which('pixi') or str(Path.home() / '.pixi/bin/pixi'))
     subprocess.run([pixi, 'run', '-e', 'dev', 'python', 'scripts/train/relocate_so101_assets.py',
                     '--source-assets', str(source), '--trim-manifest', str(source / 'original_frame_ranges.json'),
-                    '--data-root', str(dataset), '--output', str(output)], cwd=ROOT / 'lios-pi', check=True)
+                    '--data-root', str(dataset), '--output', str(output)], cwd=ROOT / 'so101-policy', check=True)
     config = json.loads((DEPLOY / 'config.example.json').read_text())
     machine = dict(dataset_root=str(dataset), assets_base_dir=str(ROOT / 'local_assets'), asset_id=ASSET_ID,
                    frame_ranges_manifest=str(output / 'frame_ranges.json'), split_manifest=str(output / 'split.json'))

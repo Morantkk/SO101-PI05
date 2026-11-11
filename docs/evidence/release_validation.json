@@ -14,7 +14,7 @@
       "test_manual_release.py",
       "test_so101_relocation.py"
     ],
-    "runtime": "Existing LiOS Pixi dev interpreter, release-copy Python/test paths explicitly selected"
+    "runtime": "Existing SO101-PI05 Pixi dev interpreter, release-copy Python/test paths explicitly selected"
   },
   "weights": {
     "parts": 9,

@@ -1,4 +1,4 @@
-"""Shared validation for observation and execution consumers of LiOS actions."""
+"""Shared validation for observation and execution consumers of SO101-PI05 actions."""
 
 import numpy as np
 

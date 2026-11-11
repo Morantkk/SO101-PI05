@@ -13,9 +13,9 @@ def main():
         raise RuntimeError("Stop latch must be set before releasing torque")
     for unit in ("joint-trial", "return-home", "state-client"):
         result = subprocess.run(["systemctl", "--user", "is-active", "--quiet",
-                                 f"lios-deploy-{unit}"], check=False)
+                                 f"so101-deploy-{unit}"], check=False)
         if result.returncode == 0:
-            raise RuntimeError(f"Stop lios-deploy-{unit} before releasing torque")
+            raise RuntimeError(f"Stop so101-deploy-{unit} before releasing torque")
     config = json.loads((ROOT / "config.json").read_text())
     arms = []
     report = dict(status="releasing", holding=None, torque_readback={}, errors=[])

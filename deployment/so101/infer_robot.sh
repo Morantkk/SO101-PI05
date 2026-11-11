@@ -12,13 +12,13 @@ if (( $# )); then echo 'Unexpected arguments; use --help.' >&2; exit 2; fi
 if [[ -d "$DEPLOY_DIR/.reset_in_progress" ]]; then
     echo 'Reset is in progress; wait for it to finish.' >&2; exit 1
 fi
-if systemctl --user is-active --quiet lios-deploy-return-home; then
+if systemctl --user is-active --quiet so101-deploy-return-home; then
     echo 'Automatic return is in progress; wait for it to finish.' >&2; exit 1
 fi
-if systemctl --user is-active --quiet lios-deploy-joint-trial; then
+if systemctl --user is-active --quiet so101-deploy-joint-trial; then
     echo 'Real-robot inference is already running.'; exit 0
 fi
-RESET_GENERATION="${LIOS_EXPECTED_GENERATION:-$(cat "$DEPLOY_DIR/INFERENCE_RESET_GENERATION" 2>/dev/null || true)}"
+RESET_GENERATION="${SO101_EXPECTED_GENERATION:-$(cat "$DEPLOY_DIR/INFERENCE_RESET_GENERATION" 2>/dev/null || true)}"
 bash "$DEPLOY_DIR/start.sh"
 "$ROBOT_PYTHON" - "$DEPLOY_DIR" "$RESET_GENERATION" <<'PY'
 import json, sys, time

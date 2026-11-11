@@ -35,3 +35,11 @@ https://github.com/huggingface/lerobot
 Licensed under the Apache License, Version 2.0.
 
 Used as the dataset backend for training and normalization statistics.
+
+SO101-PI05 adaptation and naming changes, 2026-11-11:
+The policy and transport directories, project labels, configuration variables,
+and service names were renamed for this distribution by Fakun Chen.
+Upstream copyright, license, and attribution notices remain applicable.
+Historical benchmark and training records originate from the upstream work;
+renamed labels or anonymized paths do not claim new experiments or authorship.
+Upstream source: https://github.com/cmriat/LiOS

@@ -1,8 +1,8 @@
 # RTC 功能和参数
 
 一边执行旧动作块，一边推理下一块；用旧计划的重叠段引导新动作，并跳过推理期间已执行的 tick。
-逻辑在 lios-pi/src/pi/models_pytorch/rtc.py 和 deployment/so101/rtc_protocol.py。
-这是论文推理时 RTC 在 LiOS/SO101 上的适配，不是原作者硬件实验的逐项复现。
+逻辑在 so101-policy/src/pi/models_pytorch/rtc.py 和 deployment/so101/rtc_protocol.py。
+这是论文推理时 RTC 在 SO101-PI05/SO101 上的适配，不是原作者硬件实验的逐项复现。
 
 | 参数 | 值 | 意思 |
 |---|---:|---|
@@ -17,4 +17,4 @@
 
 30Hz 下 30 步约 1 秒，15 步约 0.5 秒，5 步约 167ms。普通推理使用 40 次去噪。
 RTC 用动作侧 autograd/VJP，但模型冻结，不做优化器更新；不能整个包进 inference_mode。
-参考、原作者代码与 MIT 许可保留在 lios-pi/docs/rtc_reference；其中旧调参记录为历史证据。
+参考、原作者代码与 MIT 许可保留在 so101-policy/docs/rtc_reference；其中旧调参记录为历史证据。

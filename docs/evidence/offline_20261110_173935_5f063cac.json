@@ -1,5 +1,5 @@
 {
-  "checkpoint": "/path/to/LiOS/checkpoints/pi05_so101_fold_81plus/fold81_197_b8_e10_20261108/step100000",
+  "checkpoint": "/path/to/SO101-PI05/checkpoints/pi05_so101_fold_81plus/fold81_197_b8_e10_20261108/step100000",
   "episode": 81,
   "sample_split": "train",
   "rtc": {
@@ -467,7 +467,7 @@
   "loaded_tensors": 813,
   "executed": false,
   "motor_commands_sent": 0,
-  "runtime_executable": "/home/YOUR_USER/.pixi/envs/lios-pi-14872085571260524947/envs/dev/bin/python",
+  "runtime_executable": "/home/YOUR_USER/.pixi/envs/so101-policy-14872085571260524947/envs/dev/bin/python",
   "model_sha256": "042e6ea3ddbcad174dcacdab4fef2c1d6b848e72fb3cf2cc5ddfdb4fcbd2c454",
   "norm_stats_sha256": "02bcec98c2125383b9b2fd266b00384f4c5137768d8682b38eecd1dc6389cce0"
 }

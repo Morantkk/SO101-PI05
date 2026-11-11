@@ -11,7 +11,7 @@ episode 81–197 的训练划分、归一化、原始文件哈希与路径迁移
 
 ## 推理与控制
 
-WebRTC → CUDA IPC → Pixi LiOS 模型 → WebSocket → LeRobot 控制器。
+WebRTC → CUDA IPC → Pixi SO101-PI05 模型 → WebSocket → LeRobot 控制器。
 RTC 是推理时 PiGDM/VJP 重叠前缀引导和延迟感知队列；不更新模型。
 统一 run/stop/home/clear-cache/status/models/check-model/register-model。
 停机关闭推理和相机两端；重启重建连接。归位先半开夹爪并等 0.5 秒。

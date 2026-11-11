@@ -8,16 +8,16 @@
 在仓库根目录：
 
 ```bash
-cd lios-pi
+cd so101-policy
 pixi install -e dev
 pixi run -e dev lerobot
-cd ../lios-webrtc
+cd ../so101-transport
 pixi install
 pixi run bash -c 'cd signal-server && go build -o webrtcssvr .'
 cd ..
 ```
 
-其中 lios-pi 的 lerobot task 安装的是旧数据接口依赖，不能直接作为串口控制环境。
+其中 so101-policy 的 lerobot task 安装的是旧数据接口依赖，不能直接作为串口控制环境。
 如果带中文目录的路径影响某些二进制依赖，使用 Pixi detached environments 放到 ASCII 路径；不复制原机器 .pixi 缓存。
 
 ## 2. 机械臂驱动环境
@@ -59,7 +59,7 @@ python3 tools/configure_local.py --dataset /absolute/path/to/matching_so101_data
 ```
 
 工具调用原 relocation 脚本核对全部 source hashes，复制统计并更新路径；创建 config.json / machine.json。不会打开相机或串口。
-公开原始模板在 lios-pi/assets；本机重定位资产在 local_assets（不提交）。
+公开原始模板在 so101-policy/assets；本机重定位资产在 local_assets（不提交）。
 Paligemma tokenizer 首次需要联网从原配置地址缓存；在离线设备上应先准备缓存。
 
 ## 5. 设备和归位姿态
@@ -81,6 +81,18 @@ bash robotctl.sh check-model --model local100000 --rtc off
 
 --dry-run 只检查选择；check-model 校验张量和数据/统计，不操作机器人。
 --offline 会进行记录样本 GPU 推理，也不操作机器人，但要求原数据和模型环境已准备好。
-真实 run/home 会运动，命令见 ROBOT_COMMANDS.md。不要同时从两个副本运行同名 lios-deploy-* 服务，它们共享用户服务命名。
+真实 run/home 会运动，命令见 ROBOT_COMMANDS.md。不要同时从两个副本运行同名 so101-deploy-* 服务，它们共享用户服务命名。
 
 本次发布包只做 CPU、文件完整性、静态与导入检查，没有在新机器执行端到端安装或真机任务。
+
+## Naming migration (2026-11-11)
+
+Use `so101-policy/` for the model and `so101-transport/` for transport.
+Environment variables now use the `SO101_` prefix; user services use `so101-deploy-*`.
+Before upgrading a running installation, stop all services with the previous
+checkout's `robotctl.sh stop`, then migrate the local paths and restart from
+this checkout. The renamed stop command cannot manage services from an older
+checkout. Do not run both versions against the same robot.
+
+Historical evidence paths were normalized to the new directory names; recorded
+metrics and model bytes are unchanged. Third-party attribution is in NOTICE.

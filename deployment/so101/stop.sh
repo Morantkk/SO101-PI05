@@ -6,7 +6,7 @@ source "$DEPLOY_DIR/runtime_env.sh"
 touch "$DEPLOY_DIR/STOP_MOTION"
 # Stop inference first so a finishing controller does not relaunch observation.
 for component in inference joint-trial panel state-client sender receiver signal; do
-    if systemctl --user is-active --quiet "lios-deploy-$component"; then
-        systemctl --user stop "lios-deploy-$component"
+    if systemctl --user is-active --quiet "so101-deploy-$component"; then
+        systemctl --user stop "so101-deploy-$component"
     fi
 done

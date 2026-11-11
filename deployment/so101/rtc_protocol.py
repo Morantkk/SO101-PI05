@@ -1,4 +1,4 @@
-"""RTC Algorithm 1 across LiOS WebSockets, using acknowledged control ticks.
+"""RTC Algorithm 1 across SO101-PI05 WebSockets, using acknowledged control ticks.
 
 The consumer owns the clock. A chunk's start_tick is the observation tick,
 so installing a result skips exactly the ticks consumed during inference.

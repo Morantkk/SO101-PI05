@@ -1,4 +1,4 @@
-"""Execute SO101 joint trials or a full task using LiOS state/action WebSockets."""
+"""Execute SO101 joint trials or a full task using SO101-PI05 state/action WebSockets."""
 
 import json
 import time

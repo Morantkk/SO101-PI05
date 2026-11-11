@@ -7,11 +7,11 @@
   "steps_per_epoch": 10807,
   "total_steps": 108070,
   "frozen": true,
-  "checkpoint_dir": "/path/to/LiOS/checkpoints/pi05_so101_fold_81plus/fold81_197_b8_e10_20261108",
-  "log_path": "/path/to/LiOS/training_runs/fold81_197_b8_e10_20261108/train.log",
+  "checkpoint_dir": "/path/to/SO101-PI05/checkpoints/pi05_so101_fold_81plus/fold81_197_b8_e10_20261108",
+  "log_path": "/path/to/SO101-PI05/training_runs/fold81_197_b8_e10_20261108/train.log",
   "wandb_mode": "offline",
   "command": [
-    "/home/YOUR_USER/.pixi/envs/lios-pi-14872085571260524947/envs/dev/bin/python",
+    "/home/YOUR_USER/.pixi/envs/so101-policy-14872085571260524947/envs/dev/bin/python",
     "-m",
     "torch.distributed.run",
     "--standalone",
@@ -30,7 +30,7 @@
   ],
   "config": {
     "name": "pi05_so101_fold_81plus",
-    "project_name": "lios-pi",
+    "project_name": "so101-policy",
     "exp_name": "fold81_197_b8_e10_20261108",
     "model": {
       "action_dim": 32,
@@ -44,7 +44,7 @@
       "state_history_frames": 1,
       "state_delay_frames": 0
     },
-    "pytorch_weight_path": "/path/to/LiOS/weights/pi05_base_pytorch",
+    "pytorch_weight_path": "/path/to/SO101-PI05/weights/pi05_base_pytorch",
     "pytorch_training_precision": "bfloat16",
     "all_fp32": false,
     "frozen": true,
@@ -83,8 +83,8 @@
         5,
         -1
       ],
-      "frame_ranges_manifest": "/path/to/LiOS/lios-pi/assets/pi05_so101_fold_81plus/fold81_197_h30_trainonly_wristfixed_20261108/original_frame_ranges.json",
-      "split_manifest": "/path/to/LiOS/lios-pi/assets/pi05_so101_fold_81plus/fold81_197_h30_trainonly_wristfixed_20261108/split.json"
+      "frame_ranges_manifest": "/path/to/SO101-PI05/so101-policy/assets/pi05_so101_fold_81plus/fold81_197_h30_trainonly_wristfixed_20261108/original_frame_ranges.json",
+      "split_manifest": "/path/to/SO101-PI05/so101-policy/assets/pi05_so101_fold_81plus/fold81_197_h30_trainonly_wristfixed_20261108/split.json"
     },
     "parent_data_dir": null,
     "batch_size": 8,
@@ -99,8 +99,8 @@
     "save_step_interval": 20000,
     "save_epoch_interval": null,
     "wandb_enabled": true,
-    "assets_base_dir": "/path/to/LiOS/lios-pi/assets",
-    "checkpoint_base_dir": "/path/to/LiOS/checkpoints",
+    "assets_base_dir": "/path/to/SO101-PI05/so101-policy/assets",
+    "checkpoint_base_dir": "/path/to/SO101-PI05/checkpoints",
     "overwrite": true,
     "resume": false,
     "policy_metadata": null
@@ -112,5 +112,5 @@
   "finished_at": 1794206238.9443352,
   "saved_step": 100000,
   "stop_reason": "User requested stop after the complete step100000 model, EMA and optimizer checkpoint",
-  "resume_checkpoint": "/path/to/LiOS/checkpoints/pi05_so101_fold_81plus/fold81_197_b8_e10_20261108/step100000"
+  "resume_checkpoint": "/path/to/SO101-PI05/checkpoints/pi05_so101_fold_81plus/fold81_197_b8_e10_20261108/step100000"
 }

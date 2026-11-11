@@ -18,7 +18,7 @@ from init_inference import stop_unit, initialize, unit_state
 from model_registry import load_profiles
 
 ROOT = Path(__file__).resolve().parent
-TASK_UNIT = "lios-deploy-policy-task"
+TASK_UNIT = "so101-deploy-policy-task"
 RTC = dict(
     enabled=True,
     num_steps=5,
@@ -124,11 +124,11 @@ def reset_robot(mode, root):
 
 def stop_inference_stack():
     for component in ("inference", "receiver", "sender"):
-        stop_unit(f"lios-deploy-{component}")
+        stop_unit(f"so101-deploy-{component}")
 
 
 def validate_profile(command, project):
-    with tempfile.TemporaryDirectory(prefix="lios-model-check-") as directory:
+    with tempfile.TemporaryDirectory(prefix="so101-model-check-") as directory:
         output = Path(directory) / "profile.json"
         result = subprocess.run(command + ["--output", str(output)], cwd=project, capture_output=True, text=True)
         if result.returncode:
@@ -145,7 +145,7 @@ def register_model(args, root):
         raise ValueError("Model name already exists; choose a new name")
     if unit_state(TASK_UNIT).get("ActiveState") in ("active", "activating", "deactivating"):
         raise RuntimeError("Stop a running robot command before registering a model")
-    project = root.parents[1] / "lios-pi"
+    project = root.parents[1] / "so101-policy"
     command = [os.environ.get("PIXI_BIN", str(Path.home() / ".pixi/bin/pixi")), "run", "--as-is", "-e", "dev", "python",
                "scripts/deployment/register_so101_model.py", "--checkpoint", str(args.checkpoint.expanduser().resolve()),
                "--policy", args.policy, "--step", str(args.step)]
@@ -168,7 +168,7 @@ def register_model(args, root):
 def check_model(args, root):
     """Check registered identity on CPU; optionally run device-free GPU inference."""
     config = select_config(args.model, args.rtc, root)
-    project = root.parents[1] / "lios-pi"
+    project = root.parents[1] / "so101-policy"
     pixi = [os.environ.get("PIXI_BIN", str(Path.home() / ".pixi/bin/pixi")), "run", "--as-is", "-e", "dev", "python"]
     command = pixi + ["scripts/deployment/register_so101_model.py", "--checkpoint", config["checkpoint"],
                       "--policy", config["policy"], "--step", str(config["checkpoint_step"])]
@@ -182,7 +182,7 @@ def check_model(args, root):
             raise ValueError(f"Registered identity mismatch: {key}")
     print(f"Model interface, weights, statistics and data verified: {args.model}; RTC {args.rtc}; no motor access")
     if args.offline:
-        if unit_state("lios-deploy-inference").get("ActiveState") in ("active", "activating", "deactivating"):
+        if unit_state("so101-deploy-inference").get("ActiveState") in ("active", "activating", "deactivating"):
             raise RuntimeError("Stop the inference service before running a separate offline GPU check")
         report = root / "validation" / (time.strftime("%Y%m%d_%H%M%S_") + uuid.uuid4().hex[:8])
         report.mkdir(parents=True)
@@ -206,7 +206,7 @@ def launch(generation, root):
             f"--working-directory={root}",
             f"--property=StandardOutput=append:{log}",
             f"--property=StandardError=append:{log}",
-            f"--setenv=LIOS_EXPECTED_GENERATION={generation}",
+            f"--setenv=SO101_EXPECTED_GENERATION={generation}",
             "/usr/bin/bash",
             str(root / "infer_robot.sh"),
         ],
@@ -326,7 +326,7 @@ def main(argv=None, root=ROOT):
     check.add_argument("--model", required=True)
     check.add_argument("--rtc", required=True, choices=("on", "off"))
     check.add_argument("--offline", action="store_true", help="Also run GPU inference on a recorded dataset sample, without cameras/motors")
-    register = commands.add_parser("register-model", help="Validate and register a compatible LiOS SO101 checkpoint; no motors")
+    register = commands.add_parser("register-model", help="Validate and register a compatible SO101-PI05 SO101 checkpoint; no motors")
     register.add_argument("--name", required=True)
     register.add_argument("--checkpoint", type=Path, required=True)
     register.add_argument("--step", type=int, required=True)
@@ -351,7 +351,7 @@ def main(argv=None, root=ROOT):
                 rtc=config.get("rtc"),
                 stop_latch=(root / "STOP_MOTION").exists(),
                 services={
-                    name: unit_state(f"lios-deploy-{name}")
+                    name: unit_state(f"so101-deploy-{name}")
                     for name in ("policy-task", "joint-trial", "return-home", "inference", "receiver", "sender")
                 },
             )

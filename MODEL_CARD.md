@@ -1,6 +1,6 @@
 # local100000 — 冻结主干 SO101 衣物折叠模型
 
-仅发布 fold81_197_b8_e10_20261108/step100000 raw 检查点。冻结 PaliGemma；动作专家与相关投影训练，见 lios-pi/scripts/train/train_pytorch_fsdp.py。
+仅发布 fold81_197_b8_e10_20261108/step100000 raw 检查点。冻结 PaliGemma；动作专家与相关投影训练，见 so101-policy/scripts/train/train_pytorch_fsdp.py。
 不是 cloud27010，不是 EMA，不是 LoRA/adapter。完整权重包含冻结主干，未量化、裁剪、转换张量或重导出。
 
 ## 训练与接口

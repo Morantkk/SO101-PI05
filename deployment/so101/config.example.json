@@ -36,7 +36,7 @@
     "right_wrist_roll.pos",
     "right_gripper.pos"
   ],
-  "backend": "lios",
+  "backend": "so101",
   "report_dir": "local_step100000",
   "weights_variant": "raw",
   "compile_mode": "default",
